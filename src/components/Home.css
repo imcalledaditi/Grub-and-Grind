@@ -5,7 +5,7 @@
     overflow: hidden;
     padding: 2rem 5%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('C:\Users\MOHAN\Downloads\Aditi only\SRM\grub and grind\Grub_and_Grind\src\assets\hero-bg.jpg'); /* Update the path as needed */
+      url('C:\Users\MOHAN\Downloads\Aditi only\SRM\grub and grind\Grub-and-Grind\src\assets\hero-bg.jpg'); /* Update the path as needed */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,16 +38,13 @@
   }
   
   .main-heading {
-    font-size: 4.5rem;
-    color: white;
-    line-height: 1.2;
+    font-size: 3rem;
+    color: #ffffff;
     margin-bottom: 1.5rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
   .sub-heading {
-    font-size: 50px !important;
+    font-size: 20px !important;
     color: #e0e0e0;
     margin-bottom: 2.5rem;
     font-weight: 500;

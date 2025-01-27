@@ -1,0 +1,85 @@
+.about-us {
+    background-color: #f9fafb; /* Light gray background */
+    padding: 3rem 1.5rem; /* Spacing for the section */
+  }
+  
+  .about-us .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .about-us .grid {
+      grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+    }
+  }
+  
+  .about-us img {
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 100%; /* Responsive image */
+  }
+  
+  .about-us h2 {
+    color: #16a34a; /* Green color for the tagline */
+    font-weight: 600;
+    font-size: 1.125rem; /* 18px */
+  }
+  
+  .about-us h1 {
+    color: #111827; /* Dark text */
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    margin-top: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .about-us h1 {
+      font-size: 2.5rem; /* Larger on bigger screens */
+    }
+  }
+  
+  .about-us p {
+    color: #374151; /* Gray text */
+    margin-top: 1rem;
+    line-height: 1.75;
+  }
+  
+  .about-us h3 {
+    color: #15803d; /* Slightly darker green */
+    font-size: 1.25rem; /* 20px */
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+  
+  .about-us button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #16a34a; /* Green button */
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem; /* Rounded button */
+    font-size: 1rem; /* 16px */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-us button:hover {
+    background-color: #15803d; /* Darker green on hover */
+  }
+  
+  .about-us .absolute {
+    background: #ffffff; /* Background for the stamp */
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for the stamp */
+  }
+  
+  .about-us .absolute span {
+    font-size: 0.875rem; /* 14px */
+    color: #16a34a;
+  }
+  
