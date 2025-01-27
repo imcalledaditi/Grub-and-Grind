@@ -1,4 +1,5 @@
 import React from "react";
+import aboutImage from '../assets/hero-bg.jpg';
 import './AboutUs.css';
 
 
@@ -9,13 +10,11 @@ const AboutUs = () => {
         {/* Left Section: Image */}
         <div className="relative">
           <img
-            src="/path-to-your-image.jpg"
+            src={aboutImage}
             alt="Fitness Instructor"
             className="rounded-lg shadow-lg"
           />
-          <div className="absolute top-0 left-0 bg-white p-2 rounded-full shadow-md">
-            <span className="text-sm text-green-600">NATURAL BEAUTY</span>
-          </div>
+          
         </div>
 
         {/* Right Section: Content */}
@@ -29,7 +28,7 @@ const AboutUs = () => {
           <p className="text-gray-700 mt-4 leading-relaxed">
             Guiding You to a Healthier, Happier You! Our expert instructors are
             dedicated to transforming your fitness goals into reality. Whether
-            you're just starting or leveling up, we’re here to inspire, support,
+            you're just starting or leveling up, we're here to inspire, support,
             and keep you motivated every step of the way!
           </p>
           <h3 className="text-xl font-semibold text-green-700 mt-6">
