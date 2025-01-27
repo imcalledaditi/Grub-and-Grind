@@ -1,0 +1,120 @@
+.home-container {
+    min-height: calc(100vh - 80px);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('C:\Users\MOHAN\Downloads\Aditi only\SRM\grub and grind\Grub_and_Grind\src\assets\hero-bg.jpg'); /* Update the path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header-section {
+    margin-bottom: 2rem;
+    z-index: 1;
+  }
+  
+  .category-label {
+    color: #4eff91;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .content-left {
+    max-width: 800px;
+  }
+  
+  .main-heading {
+    font-size: 4.5rem;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .sub-heading {
+    font-size: 50px !important;
+    color: #e0e0e0;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+  
+  .start-course-btn {
+    display: inline-block;
+    background-color: #ffa500;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .start-course-btn:hover {
+    background-color: #ff8c00;
+    transform: translateY(-2px);
+  }
+  
+  .social-links {
+    margin-top: 4rem;
+  }
+  
+  .social-links p {
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background-color: #4eff91;
+    color: #000;
+  }
+  
+  @media (max-width: 768px) {
+    .main-heading {
+      font-size: 3rem;
+    }
+    
+    .home-container {
+      padding: 1rem;
+    }
+    
+    .home-container .main-content .content-left .sub-heading {
+      font-size: 30px !important;
+    }
+  }
+  
