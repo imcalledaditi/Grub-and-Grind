@@ -7,14 +7,18 @@ const AboutUs = () => {
   return (
     <section className="about-us bg-gray-50 py-12 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        {/* Left Section: Image */}
-        <div className="relative">
-          <img
-            src={aboutImage}
-            alt="Fitness Instructor"
-            className="rounded-lg shadow-lg"
-          />
-          
+        {/* Left Section */}
+        <div>
+          <div className="relative">
+            <button className="px-8 py-3 text-white">
+              Our Instructors
+            </button>
+            <img
+              src={aboutImage}
+              alt="Fitness Instructor"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
         </div>
 
         {/* Right Section: Content */}
@@ -39,9 +43,6 @@ const AboutUs = () => {
             instructors who bring passion, expertise, and a commitment to helping
             you become the best version of yourself!
           </p>
-          <button className="mt-6 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
-            Our Instructors
-          </button>
         </div>
       </div>
     </section>

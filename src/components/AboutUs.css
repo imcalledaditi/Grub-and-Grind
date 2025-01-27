@@ -20,6 +20,10 @@
     border-radius: 0.75rem; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     max-width: 100%; /* Responsive image */
+    height: 580px;
+    width: 470px;
+    left: 10vw;
+    position: relative;
   }
   
   .about-us h2 {
@@ -54,21 +58,25 @@
     margin-top: 1.5rem;
   }
   
+  .about-us .relative {
+    position: relative;
+  }
+  
   .about-us button {
-    margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #16a34a; /* Green button */
-    color: #ffffff;
+    position: absolute;
+    top: 75vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    white-space: nowrap;
+    padding: 12px 30px;
+    background-color: #16a34a;
     border: none;
-    border-radius: 0.5rem; /* Rounded button */
-    font-size: 1rem; /* 16px */
-    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
   }
   
   .about-us button:hover {
-    background-color: #15803d; /* Darker green on hover */
+    background-color: #15803d;
   }
   
   .about-us .absolute {
