@@ -1,0 +1,19 @@
+.download-section {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .download-image {
+    width: 80%;  /* Reduced from 100% */
+    max-width: 800px;  /* Reduced from 1200px */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Add media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .download-image {
+      width: 90%;  /* Slightly larger on mobile for better visibility */
+    }
+  }
