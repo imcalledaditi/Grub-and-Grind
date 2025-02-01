@@ -15,6 +15,7 @@ const cards = [
     image: image1,
     stat: "121/80",
     statunit: "mmHg",
+    link: "https://www.youtube.com/playlist?list=PLB0AYRZmsMalvNbfs1qMWUeB2YF3CcOgI"
   },
   {
     id: "physical",
@@ -23,6 +24,7 @@ const cards = [
     image: image2,
     stat: "32",
     statunit: "minutes",
+    link: "https://www.youtube.com/playlist?list=PLB0AYRZmsMake5dK42lB2hkSlRgpDVsWl"
   },
   {
     id: "sleep",
@@ -31,6 +33,7 @@ const cards = [
     image: image3,
     stat: "8",
     statunit: "hours",
+    link: "https://www.youtube.com/playlist?list=PLG98j67a-FKkYfNmnnhO_0hfX21OgO9lW"
   },
   {
     id: "stress",
@@ -39,6 +42,7 @@ const cards = [
     image: image4,
     stat: "60",
     statunit: "bpm",
+    link: "https://www.youtube.com/playlist?list=PLFfhO7WNmG6o3pI-0wby-8d25eNmowfpT"
   },
   {
     id: "social",
@@ -47,6 +51,7 @@ const cards = [
     image: image5,
     stat: "3+",
     statunit: "friends",
+    link: "https://www.youtube.com/playlist?list=PLTgHf_B4EipZyLCydl0jkgfj9otk7N84F"
   },
   {
     id: "substance",
@@ -55,6 +60,7 @@ const cards = [
     image: image6,
     stat: "0",
     statunit: "drinks",
+    link: "https://www.youtube.com/playlist?list=PLAFs3kxY4h19s58CCweEFjPflDTrMbKmY"
   },
 ];
 
@@ -90,8 +96,12 @@ const LifestylePillars = () => {
     setActiveIndex(index);
   };
 
-  const handleCardClick = (index) => {
-    setActiveIndex(index);
+  const handleCardClick = (index, link) => {
+    if (link) {
+      window.open(link, '_blank', 'noopener noreferrer');
+    } else {
+      setActiveIndex(index);
+    }
   };
 
   useEffect(() => {
@@ -157,8 +167,8 @@ const LifestylePillars = () => {
               key={card.id}
               className={`${styles.card} ${
                 index === activeIndex ? styles.focusedCard : ""
-              }`}
-              onClick={() => handleCardClick(index)}
+              } ${card.link ? styles.clickableCard : ""}`}
+              onClick={() => handleCardClick(index, card.link)}
             >
               <img 
                 src={card.image} 

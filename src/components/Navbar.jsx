@@ -6,7 +6,9 @@ function Navbar() {
   const scrollToSection = (sectionClass) => (e) => {
     e.preventDefault();
     const section = document.querySelector(sectionClass);
-    section.scrollIntoView({ behavior: 'smooth' });
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -22,7 +24,7 @@ function Navbar() {
         <a href="#" onClick={scrollToSection('.about-us')}>About Us</a>
         <a href="#" onClick={scrollToSection('.courses-container')}>All Course</a>
         <a href="#" onClick={scrollToSection('.blog-section')}>Blog</a>
-        <Link to="/contact">Contact Us</Link>
+        <a href="#contact" onClick={scrollToSection('#contact')}>Contact Us</a>
         <button className="sign-up">Sign Up</button>
       </div>
     </nav>

@@ -8,6 +8,7 @@ import LifestylePillars from './components/FitnessAndNutrition/LifestylePillars.
 import Blogs from './components/Blogs/Blogs.jsx';
 import './App.css';
 import Download from './components/Download/Download.jsx';
+import ContactUs from './components/ContactUs/ContactUs.jsx';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
                 <LifestylePillars />
                 <Blogs />
                 <Download />
+                <ContactUs />
               </>
             } />
           </Routes>
