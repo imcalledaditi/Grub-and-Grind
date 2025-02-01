@@ -34,7 +34,7 @@ const cards = [
   },
   {
     id: "stress",
-    title: "Stress Management",
+    title: "Fitness Expertise",
     description: "Managing stress improves mental and physical well-being.",
     image: image4,
     stat: "60",
