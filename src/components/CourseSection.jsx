@@ -21,19 +21,19 @@ const CourseSection = () => {
     {
       Icon: FaRunning,
       title: "Women's Course",
-      description: "Strong. Confident. Unstoppable. Transform your fitness journey with workouts designed to tone, sculpt, and energize your body—your time to shine starts now!",
+      description: "Tone, sculpt, and energize! Boost confidence with workouts designed to transform your fitness journey.",
       hasRightDivider: true
     },
     {
       Icon: GiLotus,
       title: "Basic Course",
-      description: "Start where you are, use what you have, and crush your fitness goals! Our beginner-friendly program makes fitness fun, simple, and achievable.",
+      description: "Start strong! A beginner-friendly program to build strength, endurance, and flexibility at your own pace.",
       hasRightDivider: true
     },
     {
       Icon: FaDumbbell,
       title: "Men's Course",
-      description: "Strength meets strategy. Push limits,build muscle, and dominate your fitness game with workouts crafted for peak performance and results.",
+      description: "Push limits, build muscle, and dominate your fitness game with targeted, high-performance workouts.",
       hasRightDivider: false
     }
   ];

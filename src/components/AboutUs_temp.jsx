@@ -23,9 +23,7 @@ const AboutUs = () => {
 
         {/* Right Section: Content */}
         <div className="text-center md:text-left">
-          <h2 className="text-green-600 font-bold text-lg">
-            TRANSFORMING 80,000+ LIVES AND COUNTING!
-          </h2>
+          
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
             Where Fitness Meets Success
           </h1>
@@ -36,7 +34,7 @@ const AboutUs = () => {
             and keep you motivated every step of the way!
           </p>
           <h3 className="text-xl font-semibold text-green-700 mt-6">
-            100+ Ways to Redefine Your Wellness!
+              Discover New Ways to Elevate Your Wellness!
           </h3>
           <p className="text-gray-700 mt-2">
             Dive into our diverse courses tailored for every fitness level. Meet

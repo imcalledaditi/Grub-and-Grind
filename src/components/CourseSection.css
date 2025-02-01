@@ -17,6 +17,7 @@
     align-items: center;
     max-width: 350px;
     position: relative;
+    height: 100%;  /* Added to ensure equal height */
   }
   
   /* Add divider styling */
@@ -63,12 +64,21 @@
     font-size: 2.2rem;
     margin-bottom: 1.3rem;
     color: #333;
+    min-height: 2.6rem;  /* Added for consistent title height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .course-description {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #666;
+    flex-grow: 1;  /* Added to push content to top */
+    display: flex;
+    align-items: center;  /* Center text vertically */
+    margin: 0;  /* Reset margins */
+    min-height: 100px;  /* Ensure consistent height for descriptions */
   }
   
   /* Responsive Design */
@@ -83,9 +93,14 @@
       max-width: 100%;
       margin-bottom: 2.5rem;
       padding: 2rem;
+      height: auto;  /* Reset height on mobile */
     }
   
     .course-card.with-divider::after {
       display: none; /* Hide dividers on mobile */
+    }
+  
+    .course-description {
+      min-height: auto;  /* Reset min-height on mobile */
     }
   }

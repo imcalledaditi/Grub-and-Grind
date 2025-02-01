@@ -69,47 +69,46 @@ const LifestylePillars = () => {
       const startX = event.touches[0].pageX;
       container.ontouchend = (e) => {
         const endX = e.changedTouches[0].pageX;
-        if (endX < startX - 50 && activeIndex < cards.length - 1) {
-          setActiveIndex(activeIndex + 1);
-        } else if (endX > startX + 50 && activeIndex > 0) {
-          setActiveIndex(activeIndex - 1);
+        if (endX < startX - 50) {
+          handleArrowClick("right");
+        } else if (endX > startX + 50) {
+          handleArrowClick("left");
         }
       };
     }
   };
 
-  const scrollToCard = (index) => {
-    const container = cardContainerRef.current;
-    if (container) {
-      const cardWidth = container.scrollWidth / cards.length;
-      container.scrollTo({
-        left: index * cardWidth,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  useEffect(() => {
-    scrollToCard(activeIndex);
-  }, [activeIndex]);
-
   const handleArrowClick = (direction) => {
-    const newIndex = direction === "left"
-      ? Math.max(0, activeIndex - 1)
-      : Math.min(cards.length - 1, activeIndex + 1);
-    setActiveIndex(newIndex);
+    if (direction === "left") {
+      setActiveIndex((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
+    } else {
+      setActiveIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
+    }
   };
 
   const handleTabClick = (index) => {
     setActiveIndex(index);
   };
 
+  const handleCardClick = (index) => {
+    setActiveIndex(index);
+  };
+
+  useEffect(() => {
+    const container = cardContainerRef.current;
+    if (container) {
+      const cardWidth = container.scrollWidth / cards.length;
+      container.scrollTo({
+        left: activeIndex * cardWidth,
+        behavior: "smooth",
+      });
+    }
+  }, [activeIndex]);
+
   return (
     <div className={`${styles.container} lifestyle-pillars`} id="lifestyle">
-      <div className={styles.hiw}>HOW IT WORKS</div>
       <div className={styles["title-container"]}>
         <div className={styles.lam}>Fitness & Nutrition Courses</div>
-        <div className={styles.tsp}>The six pillars</div>
       </div>
       
       <div className={styles.lifestylePillars}>
@@ -133,7 +132,6 @@ const LifestylePillars = () => {
           <button
             className={styles.arrow}
             onClick={() => handleArrowClick("left")}
-            disabled={activeIndex === 0}
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M5 12L19 12M5 12L11 18M5 12L11 6" stroke="#747474" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -142,7 +140,6 @@ const LifestylePillars = () => {
           <button
             className={styles.arrow}
             onClick={() => handleArrowClick("right")}
-            disabled={activeIndex === cards.length - 1}
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M19 12L5 12M19 12L13 18M19 12L13 6" stroke="#747474" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -161,6 +158,7 @@ const LifestylePillars = () => {
               className={`${styles.card} ${
                 index === activeIndex ? styles.focusedCard : ""
               }`}
+              onClick={() => handleCardClick(index)}
             >
               <img 
                 src={card.image} 
