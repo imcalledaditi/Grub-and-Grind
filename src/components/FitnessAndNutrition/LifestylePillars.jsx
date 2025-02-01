@@ -26,7 +26,7 @@ const cards = [
   },
   {
     id: "sleep",
-    title: "Sleep",
+    title: "Pregnancy Nutrition",
     description: "Quality sleep is essential for recovery, mental clarity, and overall health.",
     image: image3,
     stat: "8",
