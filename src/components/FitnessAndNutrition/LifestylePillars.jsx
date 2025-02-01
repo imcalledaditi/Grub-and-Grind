@@ -108,7 +108,7 @@ const LifestylePillars = () => {
     <div className={styles.container}>
       <div className={styles.hiw}>HOW IT WORKS</div>
       <div className={styles["title-container"]}>
-        <div className={styles.lam}>Lifestyle as medicine:</div>
+        <div className={styles.lam}>Fitness & Nutrition Courses</div>
         <div className={styles.tsp}>The six pillars</div>
       </div>
       
