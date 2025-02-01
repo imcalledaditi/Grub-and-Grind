@@ -50,7 +50,7 @@ const cards = [
   },
   {
     id: "substance",
-    title: "Substance Management",
+    title: "Weight Loss Plan",
     description: "Avoiding substance abuse is critical for long-term health.",
     image: image6,
     stat: "0",
