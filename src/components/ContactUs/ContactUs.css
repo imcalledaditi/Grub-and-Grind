@@ -63,7 +63,7 @@
   
   /* Hover effect */
   .subscribe-button:hover {
-    background-color: #fdca00;  /* Slightly darker orange on hover */
+    background-color: #ff8c00;  /* Slightly darker orange on hover */
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
   }

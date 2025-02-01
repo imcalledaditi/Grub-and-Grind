@@ -20,7 +20,7 @@
     border-radius: 0.75rem; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     max-width: 100%; /* Responsive image */
-    height: 580px;
+    height: 570px;
     width: 485px;
     left: 10vw;
     position: relative;
@@ -64,7 +64,7 @@
   
   .about-us button {
     position: absolute;
-    top: 73vh;
+    top: 72vh;
     left: 52.5%;  /* Changed from 50% to 55% to move right */
     transform: translateX(-50%);
     z-index: 10;

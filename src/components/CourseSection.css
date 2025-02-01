@@ -57,7 +57,7 @@
   
   /* Hover effect */
   .icon-container:hover .course-icon {
-    color: #006400;  /* Green color on hover */
+    color: #ffa500;  /* Green color on hover */
   }
   
   .course-title {
