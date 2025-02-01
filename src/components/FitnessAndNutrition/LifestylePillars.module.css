@@ -1,0 +1,208 @@
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hiw {
+    font-size: 1rem;
+    color: #747474;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .title-container {
+    margin-bottom: 2rem;
+  }
+  
+  .lam {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tsp {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .lifestylePillars {
+    position: relative;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+  
+  .tab {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #747474;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .activeTab {
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+  }
+  
+  .arrows {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    right: -20px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  .arrow {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .arrow:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .arrow:not(:disabled):hover {
+    background: #f5f5f5;
+    transform: scale(1.05);
+  }
+  
+  .cardContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    padding: 1rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin: 0 -1rem;
+  }
+  
+  .cardContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    width: calc(33.333% - 1.33rem);
+    min-width: 300px;
+    scroll-snap-align: start;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .focusedCard {
+    transform: scale(1.02);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .statContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: #f8f8f8;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .statInfo {
+    text-align: center;
+  }
+  
+  .statValue {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+  }
+  
+  .statUnit {
+    font-size: 0.875rem;
+    color: #666;
+    display: block;
+    margin-top: 0.25rem;
+  }
+  
+  .content {
+    padding: 1.5rem;
+  }
+  
+  .maintext {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #333;
+  }
+  
+  .subtext {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.875rem;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .cardContainer {
+      padding: 0;
+      margin: 0;
+      gap: 1rem;
+    }
+  
+    .card {
+      width: 282px;
+      min-width: 282px;
+    }
+  
+    .cardImage {
+      height: 180px;
+    }
+  
+    .arrows {
+      left: 0;
+      right: 0;
+    }
+  
+    .arrow {
+      width: 36px;
+      height: 36px;
+    }
+  }

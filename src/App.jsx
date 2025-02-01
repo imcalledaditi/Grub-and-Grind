@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import CourseSection from './components/CourseSection';
 import AboutUs from './components/AboutUs_temp';
+import LifestylePillars from './components/FitnessAndNutrition/LifestylePillars';
 
 
 import './App.css';
@@ -16,6 +17,7 @@ function App() {
         <Home></Home>
         <CourseSection></CourseSection>
         <AboutUs></AboutUs>
+        <LifestylePillars />
         
         <Routes>
         </Routes>
