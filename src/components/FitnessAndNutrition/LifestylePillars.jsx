@@ -10,7 +10,7 @@ import image6 from '../../assets/image6.jpg';
 const cards = [
   {
     id: "nutrition",
-    title: "Nutrition",
+    title: "Kids' Recipes",
     description: "Evidence supports the use of a whole food, plant-predominant diet to prevent and treat chronic illness.",
     image: image1,
     stat: "121/80",
