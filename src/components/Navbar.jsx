@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 function Navbar() {
+  const scrollToSection = (sectionClass) => (e) => {
+    e.preventDefault();
+    const section = document.querySelector(sectionClass);
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -13,9 +19,9 @@ function Navbar() {
       {/*blah blah blah */}
       <div className="nav-links">
         <Link to="/">Home</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/courses">All Course</Link>
-        <Link to="/blog">Blog</Link>
+        <a href="#" onClick={scrollToSection('.about-us')}>About Us</a>
+        <a href="#" onClick={scrollToSection('.courses-container')}>All Course</a>
+        <a href="#" onClick={scrollToSection('.blog-section')}>Blog</a>
         <Link to="/contact">Contact Us</Link>
         <button className="sign-up">Sign Up</button>
       </div>

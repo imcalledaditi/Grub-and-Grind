@@ -33,7 +33,7 @@ function Blogs() {
   ];
 
   return (
-    <div className="blog-section">
+    <div className="blog-section" id="blogs">
       <div className="container">
         <div className="header">
           <p className="subtitle">OUR BLOGS</p>

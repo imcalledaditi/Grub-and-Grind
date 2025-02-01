@@ -1,11 +1,11 @@
 import React from "react";
-import aboutImage from '../assets/hero-bg.jpg';
+import aboutImage from '../assets/img7.jpg';
 import './AboutUs.css';
 
 
 const AboutUs = () => {
   return (
-    <section className="about-us bg-gray-50 py-12 px-6">
+    <section className="about-us bg-gray-50 py-12 px-6" id="about">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left Section */}
         <div>

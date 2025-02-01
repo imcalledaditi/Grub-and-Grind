@@ -8,6 +8,7 @@ import LifestylePillars from './components/FitnessAndNutrition/LifestylePillars.
 import Blogs from './components/Blogs/Blogs.jsx';
 import './App.css';
 
+
 function App() {
   return (
     <Router>
@@ -22,6 +23,7 @@ function App() {
                 <AboutUs_temp />
                 <LifestylePillars />
                 <Blogs />
+                
               </>
             } />
           </Routes>

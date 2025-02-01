@@ -105,7 +105,7 @@ const LifestylePillars = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} lifestyle-pillars`} id="lifestyle">
       <div className={styles.hiw}>HOW IT WORKS</div>
       <div className={styles["title-container"]}>
         <div className={styles.lam}>Fitness & Nutrition Courses</div>

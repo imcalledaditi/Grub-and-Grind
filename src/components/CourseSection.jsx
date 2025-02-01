@@ -37,7 +37,7 @@ const CourseSection = () => {
   ];
 
   return (
-    <div className="courses-container">
+    <div className="courses-container" id="courses">
       {courses.map((course, index) => (
         <CourseCard
           key={index}
