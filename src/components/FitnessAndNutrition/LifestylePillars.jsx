@@ -18,7 +18,7 @@ const cards = [
   },
   {
     id: "physical",
-    title: "Physical Activity",
+    title: "Food & Health",
     description: "Regular physical activity is key to managing weight and improving mental health.",
     image: image2,
     stat: "32",
