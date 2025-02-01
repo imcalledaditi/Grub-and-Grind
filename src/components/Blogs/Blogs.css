@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blog-section {
+    background-color: #f5f5f5;
+    padding: 64px 16px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Rest of your CSS remains the same, just remove the global styles */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #1a1a1a;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.blog-card {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.date-box {
+  background-color: #0B4619;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 60px;
+}
+
+.day {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.month {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.meta-info {
+  flex-grow: 1;
+}
+
+.author {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.stats {
+  font-size: 14px;
+  color: #666;
+}
+
+.dot {
+  margin: 0 8px;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.card-description {
+  color: #666;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.read-more {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #f57c00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+  
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
