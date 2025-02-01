@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from '../assets/img7.jpg';
+import aboutImage from '../assets/sebum3.png';
 import './AboutUs.css';
 
 

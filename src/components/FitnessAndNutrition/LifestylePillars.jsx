@@ -1,65 +1,65 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./LifestylePillars.module.css";
-import image1 from '../../assets/image1.jpg';
-import image2 from '../../assets/image2.jpg';
-import image3 from '../../assets/image3.jpg';
-import image4 from '../../assets/image4.jpg';
-import image5 from '../../assets/image5.jpg';
-import image6 from '../../assets/image6.jpg';
+import image1 from '../../assets/kid.jpg';
+import image2 from '../../assets/healthy.jpg';
+import image3 from '../../assets/prego.jpg';
+import image4 from '../../assets/tranier.jpeg';
+import image5 from '../../assets/sebum.jpg';
+import image6 from '../../assets/woman.jpg';
 
 const cards = [
   {
     id: "nutrition",
     title: "Kids' Recipes",
-    description: "Evidence supports the use of a whole food, plant-predominant diet to prevent and treat chronic illness.",
+    description: "A whole food, plant-predominant diet can help prevent and treat chronic illnesses. Teaching kids nutritious recipes that focus on fruits, vegetables, and whole grains fosters healthy eating habits early on.",
     image: image1,
-    stat: "121/80",
-    statunit: "mmHg",
+    stat: "47 videos",
+    statunit: "by Maya Adam",
     link: "https://www.youtube.com/playlist?list=PLB0AYRZmsMalvNbfs1qMWUeB2YF3CcOgI"
   },
   {
     id: "physical",
     title: "Food & Health",
-    description: "Regular physical activity is key to managing weight and improving mental health.",
+    description: "Regular physical activity is key to maintaining a healthy weight and improving mental well-being. Aim for at least 32 minutes of exercise daily to boost cardiovascular health.",
     image: image2,
-    stat: "32",
-    statunit: "minutes",
+    stat: "17 videos",
+    statunit: "by Maya Adam",
     link: "https://www.youtube.com/playlist?list=PLB0AYRZmsMake5dK42lB2hkSlRgpDVsWl"
   },
   {
     id: "sleep",
     title: "Pregnancy Nutrition",
-    description: "Quality sleep is essential for recovery, mental clarity, and overall health.",
+    description: "Quality sleep is essential during pregnancy, with around 8 hours recommended for recovery and mental clarity. Proper nutrition also supports better sleep quality.",
     image: image3,
-    stat: "8",
-    statunit: "hours",
+    stat: "28 videos",
+    statunit: "by Dr Supriya Puranik",
     link: "https://www.youtube.com/playlist?list=PLG98j67a-FKkYfNmnnhO_0hfX21OgO9lW"
   },
   {
     id: "stress",
     title: "Fitness Expertise",
-    description: "Managing stress improves mental and physical well-being.",
+    description: "Managing stress is vital for health. Regular exercise reduces stress and improves well-being, aiming for a heart rate of about 60 bpm during workouts.",
     image: image4,
-    stat: "60",
-    statunit: "bpm",
+    stat: "6 videos",
+    statunit: "by AXIS Flight School",
     link: "https://www.youtube.com/playlist?list=PLFfhO7WNmG6o3pI-0wby-8d25eNmowfpT"
   },
   {
     id: "social",
     title: "Exercise Hacks",
-    description: "Strong social connections reduce stress and promote longevity.",
+    description: "Strong social connections reduce stress and promote longevity. Maintaining relationships with at least three supportive friends can enhance motivation for healthy activities.",
     image: image5,
-    stat: "3+",
-    statunit: "friends",
+    stat: "41 videos",
+    statunit: "by FrankATracy",
     link: "https://www.youtube.com/playlist?list=PLTgHf_B4EipZyLCydl0jkgfj9otk7N84F"
   },
   {
     id: "substance",
     title: "Weight Loss Plan",
-    description: "Avoiding substance abuse is critical for long-term health.",
+    description: "Avoiding substance abuse is crucial for long-term health. A commitment to sobriety supports weight management and overall quality of life.",
     image: image6,
-    stat: "0",
-    statunit: "drinks",
+    stat: "5 videos",
+    statunit: "by Chloe Ting",
     link: "https://www.youtube.com/playlist?list=PLAFs3kxY4h19s58CCweEFjPflDTrMbKmY"
   },
 ];

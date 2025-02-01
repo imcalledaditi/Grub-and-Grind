@@ -4,33 +4,37 @@ import './Blogs.css'; // Change back to regular CSS import
 function Blogs() {
   const blogPosts = [
     {
-      day: 18,
       month: "Mar",
       author: "Rachael Hartley",
       likes: "57.8K",
       shares: "5.8K",
       title: "The Joy of Eating Blog by Rachael Hartley",
-      description: "Rachael Hartley, a registered dietitian, offers creative recipes and intuitive eating guidance, promoting a balanced and joyful relationship with food."
+      description: "Rachael Hartley, a registered dietitian, offers creative recipes and intuitive eating guidance, promoting a balanced and joyful relationship with food.",
+      link: "https://www.rachaelhartleynutrition.com/blog"
     },
     {
-      day: 10,
       month: "Apr",
-      author: "Dr Anitha Selvam",
+      author: "Dr. Emily Carter, MD",
       likes: "94.5K",
       shares: "38K",
-      title: "Healthy Habits for a Stronger You",
-      description: "Creating healthy habits starts with small changes. Explore tips on nutrition, mindful eating, and how to build habits that stick for long-term health."
+      title: "The Balanced Plate",
+      description: "Live Forever Lab features articles by Dr. Emily Carter, MD, covering longevity, wellness, and cutting-edge health research. Her insights focus on science-backed strategies for healthy aging, disease prevention, and optimal well-being.",
+      link: "https://liveforeverlab.com/author/dr-emily-carter-md/"
     },
     {
-      day: 4,
-      month: "Dec",
-      author: "Dr. Sanjay Shinde",
+      month: "Aug",
+      author: "Sofie Wise",
       likes: "73.2K",
       shares: "43.2K",
-      title: "Plant-Based Eating for Beginners",
-      description: "Ready to explore plant-based living? This blog is your go-to guide for starting a plant-based diet with easy recipes, nutritional tips, and the benefits of going green."
+      title: "Women's Health Blogs",
+      description: "PlushCare's Top 10 Women's Health Blogs provides expert-backed insights on fitness, nutrition, and mental health. It features curated resources to help women stay informed about wellness trends, self-care, and healthy living.",
+      link: "https://plushcare.com/blog/top-10-womens-health-blogs/?utm_source=chatgpt.com"
     }
   ];
+
+  const handleReadMore = (link) => {
+    window.open(link, '_blank', 'noopener noreferrer');
+  };
 
   return (
     <div className="blog-section" id="blogs">
@@ -61,7 +65,12 @@ function Blogs() {
               <h3 className="card-title">{post.title}</h3>
               <p className="card-description">{post.description}</p>
               
-              <button className="read-more">Read More</button>
+              <button 
+                className="read-more"
+                onClick={() => handleReadMore(post.link)}
+              >
+                Read More
+              </button>
             </div>
           ))}
         </div>

@@ -5,12 +5,14 @@
     overflow: hidden;
     padding: 2rem 5%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('C:\Users\MOHAN\Downloads\Aditi only\SRM\grub and grind\Grub-and-Grind\src\assets\hero-bg.jpg'); /* Update the path as needed */
+      url('C:\Users\MOHAN\Downloads\Aditi only\SRM\grub and grind\Grub-and-Grind\src\assets\idk4.jpg'); /* Update the path as needed */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    margin-top: 0;
+    padding-top: 0;
   }
   
   .header-section {
@@ -24,6 +26,11 @@
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    display: block;
+    position: relative;
+    z-index: 2;
   }
   
   .main-content {
@@ -113,5 +120,24 @@
     .home-container .main-content .content-left .sub-heading {
       font-size: 30px !important;
     }
+  }
+  
+  .fitness-nutrition-label {
+    color: #00ff95;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 12rem;
+    padding-top: 8rem;
+    padding-left: 7%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+    display: block;
+  }
+  
+  .home-section {
+    padding-top: 0;
+    margin-top: 0;
   }
   

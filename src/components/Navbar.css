@@ -1,64 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 1.5rem 7%;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .logo a {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.navbar + * {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+section:first-of-type {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.logo a {
     text-decoration: none;
-  }
-  
-  .logo h1 {
+}
+
+.logo h1 {
     font-size: 2rem;
     font-weight: bold;
     color: #333;
     margin: 0;
-  }
-  
-  .accent {
+}
+
+.accent {
     color: #006B4D;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-  }
-  
-  .nav-links a {
+    gap: 4rem;
+}
+
+.nav-links a {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
-    font-size: 0.95rem;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
     transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
+    color: #ffa500;
+}
+
+.login {
     color: #006B4D;
-  }
-  
-  .sign-up {
+    padding: 0.75rem 1.75rem;
+    border: 2px solid #006B4D;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-left: 2.5rem;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.login:hover {
+    background-color: rgba(0, 107, 77, 0.1);
+}
+
+.sign-up {
     background-color: #006B4D;
     color: white;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.75rem;
     border: none;
     border-radius: 50px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+    margin-left: 0.1rem;
     transition: background-color 0.3s ease;
-  }
-  
-  .sign-up:hover {
+}
+
+.sign-up:hover {
     background-color: #005540;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .nav-links {
-      display: none;
+        display: none;
     }
     /* Add mobile menu implementation here */
-  }
+}

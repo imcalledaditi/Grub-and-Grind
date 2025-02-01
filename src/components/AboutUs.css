@@ -21,7 +21,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     max-width: 100%; /* Responsive image */
     height: 580px;
-    width: 470px;
+    width: 485px;
     left: 10vw;
     position: relative;
   }
@@ -64,19 +64,26 @@
   
   .about-us button {
     position: absolute;
-    top: 75vh;
-    left: 50%;
+    top: 73vh;
+    left: 52.5%;  /* Changed from 50% to 55% to move right */
     transform: translateX(-50%);
     z-index: 10;
     white-space: nowrap;
-    padding: 12px 30px;
-    background-color: #16a34a;
+    padding: 0.8rem 2rem;
+    background-color: #ffa500;  /* Changed to orange */
+    color: white;
     border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
     cursor: pointer;
+    transition: all 0.3s ease;
   }
   
   .about-us button:hover {
-    background-color: #15803d;
+    background-color: #ff8c00;
+    transform: translate(-50%, -2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .about-us .absolute {
