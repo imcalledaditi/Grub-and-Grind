@@ -45,18 +45,33 @@
     border-radius: 0.25rem;
   }
   
-  .subscribeButton {
-    padding: 0.5rem 1rem;
-    background-color: #4a5568;
-    color: #f7fafc;
+  .subscribe-button {
+    padding: 0.8rem 2rem;
+    background-color: #faba45;  /* Bright orange color */
+    color: white;              /* White text */
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-weight: 500;
+    font-size: 1rem;
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
   }
   
-  .subscribeButton:hover {
-    background-color: #718096;
+  /* Hover effect */
+  .subscribe-button:hover {
+    background-color: #fdca00;  /* Slightly darker orange on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+  }
+  
+  /* Active/Click state */
+  .subscribe-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(255, 140, 0, 0.2);
   }
   
   .contactDetails {
@@ -169,23 +184,6 @@
   
   .email-input::placeholder {
     color: #666;
-  }
-  
-  .subscribe-button {
-    padding: 1rem 1.5rem;
-    background-color: #ffa500;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-    width: fit-content;
-  }
-  
-  .subscribe-button:hover {
-    background-color: #ff8c00;
   }
   
   .footer-links {
