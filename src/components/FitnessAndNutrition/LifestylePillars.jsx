@@ -42,7 +42,7 @@ const cards = [
   },
   {
     id: "social",
-    title: "Social Connection",
+    title: "Exercise Hacks",
     description: "Strong social connections reduce stress and promote longevity.",
     image: image5,
     stat: "3+",
