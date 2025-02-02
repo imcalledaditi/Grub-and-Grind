@@ -39,16 +39,18 @@ const CourseSection = () => {
   ];
 
   return (
-    <div className="courses-container" id="courses">
-      {courses.map((course, index) => (
-        <CourseCard
-          key={index}
-          Icon={course.Icon}
-          title={course.title}
-          description={course.description}
-          hasRightDivider={course.hasRightDivider}
-        />
-      ))}
+    <div className ="courses-space">
+      <div className="courses-container" id="courses">
+        {courses.map((course, index) => (
+          <CourseCard
+            key={index}
+            Icon={course.Icon}
+            title={course.title}
+            description={course.description}
+            hasRightDivider={course.hasRightDivider}
+          />
+        ))}
+      </div>
     </div>
   );
 };

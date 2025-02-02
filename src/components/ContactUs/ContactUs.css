@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 .contactSection {
-    background-color: #1a202c;
+    background-color: #ffffff;
     color: #f7fafc;
     padding: 4rem 0;
   }
@@ -40,14 +40,14 @@
     flex-grow: 1;
     padding: 0.5rem;
     border: 1px solid #4a5568;
-    background-color: #2d3748;
+    background-color: #fff200;
     color: #f7fafc;
     border-radius: 0.25rem;
   }
   
   .subscribe-button {
     padding: 0.8rem 2rem;
-    background-color: #faba45;  /* Bright orange color */
+    background-color: #ff8c00;  /* Bright orange color */
     color: white;              /* White text */
     border: none;
     border-radius: 8px;
@@ -63,9 +63,9 @@
   
   /* Hover effect */
   .subscribe-button:hover {
-    background-color: #ff8c00;  /* Slightly darker orange on hover */
+    background-color: #ffa500;  /* Slightly darker orange on hover */
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(232, 166, 1, 0.3);
   }
   
   /* Active/Click state */
@@ -120,7 +120,7 @@
   }
   
   .footer {
-    background-color: #004d2c;
+    background-color: #005540;
     color: white;
     padding: 7rem 2rem 7rem 2rem;
     position: relative;
@@ -152,7 +152,7 @@
   }
   
   .footer-title {
-    color: #ffa500;
+    color: #000000;
     font-size: 2rem;
     margin-bottom: 1.5rem;
     font-family: 'Playfair Display', serif;
@@ -292,7 +292,7 @@
   }
   
   .contact-item a:hover {
-    color: #ffa500;
+    color: #faa200;
   }
   
   .contact-icon {

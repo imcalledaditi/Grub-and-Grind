@@ -1,12 +1,15 @@
+
 .container {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #ffffff;
+    
   }
   
   .hiw {
     font-size: 1rem;
-    color: #747474;
+    color: #ff8c00	;
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -19,7 +22,7 @@
   .lam {
     font-size: 2rem;
     font-weight: bold;
-    color: #333;
+    color: #000000	;
     margin-bottom: 0.5rem;
   }
   
@@ -46,7 +49,7 @@
     background: none;
     cursor: pointer;
     font-size: 1rem;
-    color: #747474;
+    color: #2e2e2e;
     transition: all 0.3s ease;
     white-space: nowrap;
     border-radius: 20px;
@@ -64,17 +67,17 @@
     background: linear-gradient(
         120deg,
         transparent,
-        rgba(0, 100, 0, 0.1),
+        rgba(90, 191, 1, 0.332),
         transparent
     );
     transition: all 0.5s ease;
   }
   
   .tab:hover {
-    background-color: rgba(0, 100, 0, 0.1);
-    color: #006400;
+    background-color: #03ca60	(252, 255, 252, 0.1);
+    color: #000000	;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 100, 0, 0.1);
+    box-shadow: 0 4px 8px #0e66043d;
   }
   
   .tab:hover::before {
@@ -82,16 +85,16 @@
   }
   
   .activeTab {
-    color: #006400;
+    color: #000000;
     font-weight: bold;
-    background-color: rgba(0, 100, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     animation: pulse 2s infinite;
   }
   
   @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(0, 100, 0, 0.2);
+        box-shadow: 0 0 0 0 rgba(54, 181, 3, 0.2);
     }
     70% {
         box-shadow: 0 0 0 10px rgba(0, 100, 0, 0);
@@ -138,7 +141,7 @@
   .arrow:not(:disabled):hover {
     transform: scale(1.15);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    border-color: #006400;
+    border-color: #03ca60;
   }
   
   /* Add animation for the SVG icons inside the arrows */

@@ -1,5 +1,5 @@
 .about-us {
-    background-color: #f6f4f2; /* Light gray background */
+    background-color: #efefef; /* Light gray background */
     padding: 3rem 1.5rem; /* Spacing for the section */
   }
   
@@ -33,7 +33,7 @@
   }
   
   .about-us h1 {
-    color: #111827; /* Dark text */
+    color: #03ca60; /* Dark text */
     font-size: 2rem; /* 32px */
     font-weight: 700;
     margin-top: 0.5rem;
@@ -46,13 +46,13 @@
   }
   
   .about-us p {
-    color: #374151; /* Gray text */
+    color: #000000; /* Gray text */
     margin-top: 1rem;
     line-height: 1.75;
   }
   
   .about-us h3 {
-    color: #15803d; /* Slightly darker green */
+    color:  #05ad53; /* Slightly darker green */
     font-size: 1.25rem; /* 20px */
     font-weight: 600;
     margin-top: 1.5rem;

@@ -1,107 +1,119 @@
+.courses-space{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2.5rem;
+  margin:  auto;
+  position: relative;
+  background-color: #ffffff; /* Light gray background for the container */
+}
+
+
 .courses-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 2.5rem;
-    padding: 2.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-  }
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  gap: 1rem;
+  padding: 2.5rem;
+  margin:  auto;
+  position: relative;
+  background-color: #ffffff; /* Light gray background for the container */
+}
   
-  .course-card {
-    flex: 1;
-    text-align: center;
-    padding: 2.5rem;
-    display: flex;
+.course-card {
+  flex: 1;
+  text-align: center;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  position: relative;
+  height: 100%;  /* Added to ensure equal height */
+}
+
+/* Add divider styling */
+.course-card.with-divider::after {
+  content: '';
+  position: absolute;
+  right: -1.25rem; /* Half of the gap */
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #039a4977,
+    transparent
+  );
+}
+
+.icon-container {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #e7e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.8rem;
+  transition: all 0.3s ease;  /* Add smooth transition */
+}
+
+.course-icon {
+  width: 70px;
+  height: 70px;
+  color: #333;  /* Default color */
+  transition: color 0.3s ease;  /* Add smooth transition */
+}
+
+/* Hover effect */
+.icon-container:hover .course-icon {
+  color: #ffa500;  /* Green color on hover */
+}
+
+.course-title {
+  font-size: 2.2rem;
+  margin-bottom: 1.3rem;
+  color: #ffa500;
+  min-height: 2.6rem;  /* Added for consistent title height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;  /* Add this to prevent line breaks */
+}
+
+.course-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #000000;
+  flex-grow: 1;  /* Added to push content to top */
+  display: flex;
+  align-items: center;  /* Center text vertically */
+  margin: 0;  /* Reset margins */
+  min-height: 100px;  /* Ensure consistent height for descriptions */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .courses-container {
     flex-direction: column;
     align-items: center;
-    max-width: 350px;
-    position: relative;
-    height: 100%;  /* Added to ensure equal height */
+    padding: 2rem;
   }
-  
-  /* Add divider styling */
+
+  .course-card {
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    height: auto;  /* Reset height on mobile */
+  }
+
   .course-card.with-divider::after {
-    content: '';
-    position: absolute;
-    right: -1.25rem; /* Half of the gap */
-    top: 10%;
-    height: 80%;
-    width: 1px;
-    background: linear-gradient(
-      to bottom,
-      transparent,
-      rgba(0, 100, 0, 0.2),
-      transparent
-    );
+    display: none; /* Hide dividers on mobile */
   }
-  
-  .icon-container {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    background-color: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.8rem;
-    transition: all 0.3s ease;  /* Add smooth transition */
-  }
-  
-  .course-icon {
-    width: 70px;
-    height: 70px;
-    color: #333;  /* Default color */
-    transition: color 0.3s ease;  /* Add smooth transition */
-  }
-  
-  /* Hover effect */
-  .icon-container:hover .course-icon {
-    color: #ffa500;  /* Green color on hover */
-  }
-  
-  .course-title {
-    font-size: 2.2rem;
-    margin-bottom: 1.3rem;
-    color: #333;
-    min-height: 2.6rem;  /* Added for consistent title height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;  /* Add this to prevent line breaks */
-  }
-  
+
   .course-description {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #666;
-    flex-grow: 1;  /* Added to push content to top */
-    display: flex;
-    align-items: center;  /* Center text vertically */
-    margin: 0;  /* Reset margins */
-    min-height: 100px;  /* Ensure consistent height for descriptions */
+    min-height: auto;  /* Reset min-height on mobile */
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .courses-container {
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
-    }
-  
-    .course-card {
-      max-width: 100%;
-      margin-bottom: 2.5rem;
-      padding: 2rem;
-      height: auto;  /* Reset height on mobile */
-    }
-  
-    .course-card.with-divider::after {
-      display: none; /* Hide dividers on mobile */
-    }
-  
-    .course-description {
-      min-height: auto;  /* Reset min-height on mobile */
-    }
-  }
+}

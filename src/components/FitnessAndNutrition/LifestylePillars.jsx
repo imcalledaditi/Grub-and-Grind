@@ -20,7 +20,7 @@ const cards = [
   {
     id: "physical",
     title: "Food & Health",
-    description: "Regular physical activity is key to maintaining a healthy weight and improving mental well-being. Aim for at least 32 minutes of exercise daily to boost cardiovascular health.",
+    description: "Regular physical activity is essential for maintaining a healthy weight. Aim for at least 32 minutes of exercise daily to boost cardiovascular health and promote mental well-being.",
     image: image2,
     stat: "17 videos",
     statunit: "by Maya Adam",
@@ -29,7 +29,7 @@ const cards = [
   {
     id: "sleep",
     title: "Pregnancy Nutrition",
-    description: "Quality sleep is essential during pregnancy, with around 8 hours recommended for recovery and mental clarity. Proper nutrition also supports better sleep quality.",
+    description: "Nutrition during pregnancy is vital for both mother and baby. A balanced diet with fruits, vegetables, whole grains, and lean proteins provides essential nutrients for fetal development and helps manage energy levels.",
     image: image3,
     stat: "28 videos",
     statunit: "by Dr Supriya Puranik",
@@ -38,7 +38,7 @@ const cards = [
   {
     id: "stress",
     title: "Fitness Expertise",
-    description: "Managing stress is vital for health. Regular exercise reduces stress and improves well-being, aiming for a heart rate of about 60 bpm during workouts.",
+    description: "Regular exercise is key to managing stress and improving health. Activities like walking or swimming can boost mood while keeping the heart rate around 60 bpm. Adjust your routine as needed to stay safe and effective..",
     image: image4,
     stat: "6 videos",
     statunit: "by AXIS Flight School",
@@ -47,7 +47,7 @@ const cards = [
   {
     id: "social",
     title: "Exercise Hacks",
-    description: "Strong social connections reduce stress and promote longevity. Maintaining relationships with at least three supportive friends can enhance motivation for healthy activities.",
+    description: "Strong social connections enhance motivation for a healthy lifestyle. Engaging with at least three supportive friends can make workouts more enjoyable and encourage accountability in achieving fitness goals.",
     image: image5,
     stat: "41 videos",
     statunit: "by FrankATracy",
@@ -56,7 +56,7 @@ const cards = [
   {
     id: "substance",
     title: "Weight Loss Plan",
-    description: "Avoiding substance abuse is crucial for long-term health. A commitment to sobriety supports weight management and overall quality of life.",
+    description: "A successful weight loss plan focuses on balanced nutrition and regular exercise. Prioritize whole foods like fruits, vegetables, and lean proteins while aiming for 150 minutes of moderate activity each week. Setting achievable goals and tracking progress can help maintain motivation.",
     image: image6,
     stat: "5 videos",
     statunit: "by Chloe Ting",

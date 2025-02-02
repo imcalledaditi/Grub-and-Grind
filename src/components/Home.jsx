@@ -17,7 +17,7 @@ const Home = () => {
           This lifestyle fuels<br />your fitness, not<br />just your meals.
           </h1>
           <p className="sub-heading">
-          Food is fuel, not therapy.
+          "Food is fuel, not therapy"
           </p>
           <Link to="/course" className="start-course-btn">
             Start Course
