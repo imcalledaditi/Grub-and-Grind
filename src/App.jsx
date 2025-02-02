@@ -9,7 +9,10 @@ import Blogs from './components/Blogs/Blogs.jsx';
 import './App.css';
 import Download from './components/Download/Download.jsx';
 import ContactUs from './components/ContactUs/ContactUs.jsx';
-
+import Recipes1 from './components/Recipie/Recipes1.jsx';  // Import the Recipes component
+import Recipes2 from './components/Recipie/Recipes2.jsx';
+import Recipes3 from './components/Recipie/Recipes3.jsx';
+import Recipes4 from './components/Recipie/Recipes4.jsx';
 
 function App() {
   return (
@@ -27,6 +30,14 @@ function App() {
                 <Blogs />
                 <Download />
                 <ContactUs />
+              </>
+            } />
+            <Route path="/recipes" element={
+              <>
+                <Recipes1 />
+                <Recipes2 />
+                <Recipes3 />
+                <Recipes4 />
               </>
             } />
           </Routes>

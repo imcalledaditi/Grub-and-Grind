@@ -7,10 +7,14 @@
     align-items: center;
     padding: 1.2rem 7%;
     background-color: white;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     border-bottom: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
 }
 
 .navbar + * {
@@ -51,7 +55,7 @@ section:first-of-type {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     transition: color 0.3s ease;
-    margin-right: 2.5rem;  /* Add space after each text link */
+    margin-right: 2rem;  /* Slightly reduced margin to accommodate new link */
 }
 
 .nav-links a:hover {
@@ -95,9 +99,20 @@ section:first-of-type {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 968px) {  /* Increased breakpoint for better spacing */
     .nav-links {
         display: none;
     }
     /* Add mobile menu implementation here */
+}
+
+/* Add padding to the body or main content to prevent content from hiding under navbar */
+body {
+    padding-top: 80px;  /* Adjust this value based on your navbar height */
+}
+
+/* Optional: Add a subtle animation when scrolling */
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);  /* Slightly transparent when scrolled */
+    backdrop-filter: blur(5px);  /* Blur effect for modern browsers */
 }
