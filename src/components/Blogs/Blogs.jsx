@@ -8,8 +8,8 @@ function Blogs() {
       author: "Rachael Hartley",
       likes: "57.8K",
       shares: "5.8K",
-      title: "The Joy of Eating Blog by Rachael Hartley",
-      description: "Rachael Hartley, a registered dietitian, offers creative recipes and intuitive eating guidance, promoting a balanced and joyful relationship with food.",
+      title: "The Joy of Eating Blog",
+      description: "Rachael Hartley, a registered dietitian, shares inspiring recipes and expert advice on intuitive eating, helping you cultivate a healthy, balanced, and joyful relationship with food. Discover delicious, creative dishes designed to nourish your body and soul while embracing the pleasure of eating.",
       link: "https://www.rachaelhartleynutrition.com/blog"
     },
     {
