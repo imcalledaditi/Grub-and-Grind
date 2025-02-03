@@ -26,12 +26,12 @@
       font-size: 1.1rem;
       text-transform: uppercase;
       letter-spacing: 1px;
-      margin-top: 0.01rem;
-      padding-top: 1.3rem;
+      margin-top: 1rem;
+      padding-top: 2rem;
       display: block;
       position: relative;
       z-index: 2;
-      padding-left: 60px; /* Adjust the value as needed to move the text to the right */
+      padding-left: 8px; /* Adjust the value as needed to move the text to the right */
   }
   .main-content {
     flex: 1;
