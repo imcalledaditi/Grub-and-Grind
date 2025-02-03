@@ -1,69 +1,40 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Teacher.css'; // Keep your existing styles for animations and layout
-import sandwich from '../../assets/bud1.jpeg'; // Sample images for use in cards
-import waffles from '../../assets/bud2.jpeg';
-import mcmuffin from '../../assets/bud3.jpeg';
+import './Teacher.css';
+import Chloe from '../../assets/chloe.jpg';
+import Cassie from '../../assets/cassieho.jpg';
+import Maya from '../../assets/maya.jpg';
 import zoodles from '../../assets/bud4.jpeg';
+import John from '../../assets/bud1.jpeg';
+import David from '../../assets/bud2.jpeg';
 
-// Sample recipe data
-const recipeCards = [
-  {
-    id: 1,
-    title: "Vegan Curried Egg Sandwich",
-    image: sandwich,
-    rating: 4.3,
-    tags: ["HP", "Vn", "Vg", "DF"],
-    link: "https://chloeting.com/recipes/vegan-curried-egg-sandwich"
-  },
-  {
-    id: 2,
-    title: "Falafel Waffles",
-    image: waffles,
-    rating: 4.4,
-    tags: ["HP", "LF", "GF", "Vn", "Vg", "DF"],
-    link: "https://chloeting.com/recipes/falafel-waffles"
-  },
-  {
-    id: 3,
-    title: "Healthy Sausage Egg McMuffin",
-    image: mcmuffin,
-    rating: 4.5,
-    tags: [],
-    link: "https://chloeting.com/recipes/healthy-sausage-egg-mcmuffin"
-  },
-  {
-    id: 4,
-    title: "Lemon Garlic Chicken Zoodles",
-    image: zoodles,
-    rating: 4.6,
-    tags: ["LC", "HP", "GF"],
-    link: "https://chloeting.com/recipes/lemon-garlic-chicken-zoodles"
-  },
+// Sample Data
+const menCards = [
+  { id: 5, title: "John Doe", image: John, link: "https://example.com/john" },
+  { id: 6, title: "David Smith", image: David, link: "https://example.com/david" }
+];
+
+const womenCards = [
+  { id: 1, title: "Chloe Ting", image: Chloe, link: "https://chloeting.com" },
+  { id: 2, title: "Cassie Ho", image: Cassie, link: "https://blogilates.com" },
+  { id: 3, title: "Maya Adam", image: Maya, link: "https://mayaadam.com" },
+  { id: 4, title: "Lemon Garlic Chicken Zoodles", image: zoodles, link: "https://example.com/zoodles" }
 ];
 
 const Teacher = () => {
   const [selectedCategory, setSelectedCategory] = useState('ALL');
 
-  const categories = [
-    'ALL',
-    'POP PILATES BEACH SERIES',
-    'SERIES',
-    'POP CARDIO',
-    'NUTRITION INFOGRAPHICS',
-    'LUNCH',
-    'BREAKFAST',
-    'DINNER',
-    'SNACKS & SIDES',
-    'DESSERTS'
-  ];
+  // Define categories
+  const categories = ['ALL', 'MEN', 'WOMEN'];
 
-  // Filter recipeCards based on selected category (currently no filter logic)
-  const displayRecipes = recipeCards; // Adjust filtering logic as necessary
+  // Filter Cards Based on Selected Category
+  const displayRecipes =
+    selectedCategory === 'ALL' ? [...menCards, ...womenCards] :
+    selectedCategory === 'MEN' ? menCards :
+    womenCards; // Default to womenCards if 'WOMEN' is selected
 
   return (
     <div className="page-container">
-      <h1 className="page-title">Recipes</h1>
+      <h1 className="page-title">Instructors</h1>
       <div className="content-wrapper">
         {/* Sidebar */}
         <div className="sidebar">
@@ -95,12 +66,6 @@ const Teacher = () => {
               >
                 <div className="recipe-image-container">
                   <img src={recipe.image} alt={recipe.title} />
-                  <div className="recipe-rating">
-                    <span className="star">★</span>
-                    <span>{recipe.rating}</span>
-                  </div>
-                  <button className="add-button">+</button>
-                  <button className="favorite-button">♡</button>
                 </div>
                 <div className="recipe-content">
                   <h3 className="recipe-title">{recipe.title}</h3>
