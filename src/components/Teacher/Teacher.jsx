@@ -33,12 +33,12 @@ const Teacher = () => {
   // Define categories
   const categories = ['ALL', 'MEN', 'WOMEN'];
 
-  // Filter Cards Based on Selected Category
   const displayRecipes =
-    selectedCategory === 'ALL' ? [...menCards, ...womenCards] :
-    selectedCategory === 'MEN' ? menCards :
-    womenCards; // Default to womenCards if 'WOMEN' is selected
-
+  selectedCategory === 'ALL'
+    ? [...menCards, ...womenCards].sort((a, b) => a.title.localeCompare(b.title))
+    : selectedCategory === 'MEN'
+    ? menCards
+    : womenCards; // Default to womenCards if 'WOMEN' is selected
   return (
     <div className="page-container">
       <h1 className="page-title">Instructors</h1>
