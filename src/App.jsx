@@ -14,7 +14,7 @@ import Recipes2 from './components/Recipie/Recipes2.jsx';
 import Recipes3 from './components/Recipie/Recipes3.jsx';
 import Recipes4 from './components/Recipie/Recipes4.jsx';
 import Teacher from './components/Teacher/Teacher.jsx';
-
+import WomenCourse from './components/WomenCourse/WomenCourse.jsx'; 
 
 function App() {
   return (
@@ -40,6 +40,13 @@ function App() {
                 <Recipes2 />
                 <Recipes3 />
                 <Recipes4 />
+                {/* Default route for the home page */}
+          <Route path="/" element={<CourseSection />} />
+          
+          {/* Women, Basic, and Men Course Routes */}
+          <Route path="/women-course" element={<WomenCourse />} />
+          <Route path="/basic-course" element={<BasicCourse />} />
+          <Route path="/men-course" element={<MenCourse />} />
               </>
             } />
             <Route path="/instructors" element={<Teacher/>} /> 
