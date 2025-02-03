@@ -5,15 +5,18 @@ import Cassie from '../../assets/cassieho.jpg';
 import Emi from '../../assets/emi.jpeg';
 import Maddie from '../../assets/maddie.jpg';
 import Sydney from '../../assets/syd.jpg';
-import John from '../../assets/bud1.jpeg';
-import David from '../../assets/bud2.jpeg';
+
+import Noel from '../../assets/noel.jpg';
+import Jeff from '../../assets/jeff.jpg';
+import Dr from '../../assets/dr.jpg';
+import X from '../../assets/x.jpg';
 
 // Sample Data
 const menCards = [
-  { id: 5, title: "Noel Deyzel", image: John, link: "https://example.com/john" },
-  { id: 6, title: "Jeff Nippard", image: David, link: "https://example.com/david" },
-  { id: 7, title: "Dr. Mike Israetel", image: John, link: "https://example.com/john" },
-  { id: 8, title: "athlean-X", image: David, link: "https://example.com/david" }
+  { id: 5, title: "Noel Deyzel", image: Noel, link: "https://example.com/john" },
+  { id: 6, title: "Jeff Nippard", image: Jeff, link: "https://example.com/david" },
+  { id: 7, title: "Dr. Mike Israetel", image: Dr, link: "https://example.com/john" },
+  { id: 8, title: "Athlean-X", image: X, link: "https://example.com/david" }
 ];
 
 const womenCards = [
