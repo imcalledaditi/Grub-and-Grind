@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import aboutImage from '../assets/sebum3.png';
 import './AboutUs.css';
-
 
 const AboutUs = () => {
   return (
@@ -10,9 +10,11 @@ const AboutUs = () => {
         {/* Left Section */}
         <div>
           <div className="relative">
-            <button className="px-8 py-3 text-white">
-              Our Instructors
-            </button>
+            <Link to="/instructors"> {/* Use Link instead of button */}
+              <button className="px-8 py-3 text-white bg-blue-500 hover:bg-blue-600 rounded">
+                Our Instructors
+              </button>
+            </Link>
             <img
               src={aboutImage}
               alt="Fitness Instructor"
@@ -23,7 +25,6 @@ const AboutUs = () => {
 
         {/* Right Section: Content */}
         <div className="text-center md:text-left">
-          
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
             Where Fitness Meets Success
           </h1>
@@ -34,7 +35,7 @@ const AboutUs = () => {
             and keep you motivated every step of the way!
           </p>
           <h3 className="text-xl font-semibold text-green-700 mt-6">
-              Discover New Ways to Elevate Your Wellness!
+            Discover New Ways to Elevate Your Wellness!
           </h3>
           <p className="text-gray-700 mt-2">
             Dive into our diverse courses tailored for every fitness level. Meet
