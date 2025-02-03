@@ -28,10 +28,10 @@ const Teacher = () => {
   ];
 
   const womenCards = [
-    { id: 1, title: "Chloe Ting", image: Chloe, link: "https://chloeting.com" },
-    { id: 2, title: "Cassie Ho", image: Cassie, link: "https://blogilates.com" },
-    { id: 3, title: "Emi Wong", image: Emi, link: "https://mayaadam.com" },
-    { id: 4, title: "Maddie Lymburner", image: Maddie, link: "https://example.com/zoodles" },
+    { id: 1, title: "Chloe Ting", image: Chloe, link: "https://chloeting.com/about" },
+    { id: 2, title: "Cassie Ho", image: Cassie, link: "https://www.blogilates.com/about-me/" },
+    { id: 3, title: "Emi Wong", image: Emi, link: "https://www.emiwong.life/about-me" },
+    { id: 4, title: "Maddie Lymburner", image: Maddie, link: "https://en.wikipedia.org/wiki/Maddie_Lymburner" },
     { id: 9, title: "Sydney Cummings", image: Sydney, link: "https://example.com/zoodles" }
   ];
 

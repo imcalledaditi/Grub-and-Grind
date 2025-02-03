@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Home from './components/Home';
 import CourseSection from './components/CourseSection';
@@ -16,21 +15,10 @@ import Recipes3 from './components/Recipie/Recipes3.jsx';
 import Recipes4 from './components/Recipie/Recipes4.jsx';
 import Teacher from './components/Teacher/Teacher.jsx';
 
-// ✅ Scroll Restoration Component
-const ScrollToTop = () => {
-  const { pathname } = useLocation(); // Detects route changes
-
-  useEffect(() => {
-    window.scrollTo(0, 0); // Forces the page to load at the top
-  }, [pathname]); // Runs every time the route changes
-
-  return null; // No UI needed
-};
 
 function App() {
   return (
     <Router>
-      <ScrollToTop /> {/* ✅ Ensure scroll resets on navigation */}
       <div className="App">
         <Navbar />
         <main>
@@ -54,7 +42,7 @@ function App() {
                 <Recipes4 />
               </>
             } />
-            <Route path="/instructors" element={<Teacher />} /> 
+            <Route path="/instructors" element={<Teacher/>} /> 
           </Routes>
         </main>
       </div>
