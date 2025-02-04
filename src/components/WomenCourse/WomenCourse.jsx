@@ -25,7 +25,7 @@ const WomenCourse = () => {
     { id: 6, title: "Jeff Nippard", image: Jeff, link: "https://jeffnippard.com/pages/about" },
     { id: 7, title: "Dr. Mike Israetel", image: Dr, link: "https://www.strongerexperts.com/pages/mikeisraetel" },
     { id: 8, title: "Athlean-X", image: X, link: "https://athleanx.com/the-coach" },
-    { id: 10, title: "Athlean-X", image: X, link: "https://athleanx.com/the-coach" }
+    { id: 10, title: "Jared Beckstrand", image: X, link: "https://athleanx.com/the-coach" }
   ];
 
   const womenCards = [
