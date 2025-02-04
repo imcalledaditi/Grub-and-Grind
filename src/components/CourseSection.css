@@ -48,36 +48,35 @@
   );
 }
 
-.icon-button {
-  width: 130px; /* Increased size */
-  height: 130px; /* Increased size */
+.icon-container {
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
+  background-color: #e7e6e6;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
-  background-color: #eeecec; /* Change as needed */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-bottom: 1.8rem;
+  transition: all 0.3s ease;  /* Add smooth transition */
 }
 
-.icon-button:hover {
-  background-color: #e0e0e0; /* Change as needed */
-}
-.icon-button:hover .course-icon {
-  color: #ffa500; /* Icon color changes on hover (change as needed) */
-}
 .course-icon {
-  width: 70px; /* Adjusted icon size */
-  height: 70px; /* Adjusted icon size */
-  color: #424141; /* Adjust the color */
+  width: 70px;
+  height: 70px;
+  color: #333;  /* Default color */
+  transition: color 0.3s ease;  /* Add smooth transition */
+}
+
+/* Hover effect */
+.icon-container:hover .course-icon {
+  color: #ffa500;  /* Green color on hover */
 }
 
 .course-title {
   font-size: 2.2rem;
-  margin-top: 1.2rem;;
+  margin-bottom: 1.3rem;
   color: #ffa500;
-  min-height: 2rem;  /* Added for consistent title height */
+  min-height: 2.6rem;  /* Added for consistent title height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +85,7 @@
 
 .course-description {
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.6;
   color: #000000;
   flex-grow: 1;  /* Added to push content to top */
   display: flex;
