@@ -9,6 +9,7 @@ import Noel from "../../assets/noel.jpg";
 import Jeff from "../../assets/jeff.jpg";
 import Dr from "../../assets/dr.jpg";
 import X from "../../assets/x.jpg";
+import Jared from "../../assets/jared.png";
 
 const Teacher = () => {
   // ✅ Ensure page opens at the top
@@ -21,10 +22,11 @@ const Teacher = () => {
   const categories = ["ALL", "MEN", "WOMEN"];
 
   const menCards = [
-    { id: 5, title: "Noel Deyzel", image: Noel, link: "https://example.com/john" },
-    { id: 6, title: "Jeff Nippard", image: Jeff, link: "https://example.com/david" },
-    { id: 7, title: "Dr. Mike Israetel", image: Dr, link: "https://example.com/john" },
-    { id: 8, title: "Athlean-X", image: X, link: "https://example.com/david" }
+    { id: 5, title: "Noel Deyzel", image: Noel, link: "https://noeldeyzel.com/" },
+    { id: 6, title: "Jeff Nippard", image: Jeff, link: "https://jeffnippard.com/pages/about" },
+    { id: 7, title: "Dr. Mike Israetel", image: Dr, link: "https://rpstrength.com/pages/team/michael-israetel?srsltid=AfmBOoovMJnZzCNvzgNT04DbNel12mSjnkL3dxwqsoFZo0BrFm1Xy56T" },
+    { id: 8, title: "Athlean-X", image: X, link: "https://athleanx.com/the-coach" },
+    { id: 10, title: "Jared Beckstrand", image: Jared, link: "https://jaredbeckstrand.com/" }
   ];
 
   const womenCards = [
