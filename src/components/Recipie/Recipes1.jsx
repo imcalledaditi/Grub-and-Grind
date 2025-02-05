@@ -42,13 +42,24 @@ const recipeCards = [
 
 function Recipes1() {
   useEffect(() => {
-    document.getElementById('recipes1-section')?.scrollIntoView({ behavior: 'smooth' });
+    const headerOffset = 80; // Adjust this value based on your navbar height
+    const section = document.getElementById('recipes1-section');
+
+    if (section) {
+      const elementPosition = section.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   }, []); // Runs only on mount
 
   return (
     <div id="recipes1-section" className="recipes-section">
       <div className="recipes-container">
-        {/* Corrected Header */}
+        {/* Header Section */}
         <div className="recipes-header recipe1-header">
           <h2>Budget Meals</h2>
           <p>Explore wallet-friendly recipes that transform everyday pantry staples into nutritious, affordable meals without compromising on flavor!</p>
@@ -58,7 +69,9 @@ function Recipes1() {
         {/* Recipe Grid */}
         <div className="recipe-grid">
           {recipeCards.map((recipe) => (
-            <div key={recipe.id} className="recipe-card clickable" style={{ cursor: 'pointer' }} onClick={() => window.open(recipe.link, '_blank', 'noopener noreferrer')}>
+            <div key={recipe.id} className="recipe-card clickable" 
+                 style={{ cursor: 'pointer' }} 
+                 onClick={() => window.open(recipe.link, '_blank', 'noopener noreferrer')}>
               <div className="recipe-image-container">
                 <img src={recipe.image} alt={recipe.title} />
                 <div className="recipe-rating">
