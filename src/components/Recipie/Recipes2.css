@@ -23,6 +23,7 @@ main {
 .recipes-header {
     margin-bottom: 1rem;
     position: relative;
+    margin-top: 0.05rem;
 }
   
 .recipes-header h2 {

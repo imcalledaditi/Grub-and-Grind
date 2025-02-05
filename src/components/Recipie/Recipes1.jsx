@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Recipes1.css';
 import sandwich from '../../assets/bud1.jpeg';
 import waffles from '../../assets/bud2.jpeg';
@@ -41,15 +41,21 @@ const recipeCards = [
 ];
 
 function Recipes1() {
+  useEffect(() => {
+    document.getElementById('recipes1-section')?.scrollIntoView({ behavior: 'smooth' });
+  }, []); // Runs only on mount
+
   return (
-    <div className="recipes-section">
+    <div id="recipes1-section" className="recipes-section">
       <div className="recipes-container">
-        <div className="recipes-header">
+        {/* Corrected Header */}
+        <div className="recipes-header recipe1-header">
           <h2>Budget Meals</h2>
           <p>Explore wallet-friendly recipes that transform everyday pantry staples into nutritious, affordable meals without compromising on flavor!</p>
           <button className="view-all">View All</button>
         </div>
         
+        {/* Recipe Grid */}
         <div className="recipe-grid">
           {recipeCards.map((recipe) => (
             <div key={recipe.id} className="recipe-card clickable" style={{ cursor: 'pointer' }} onClick={() => window.open(recipe.link, '_blank', 'noopener noreferrer')}>

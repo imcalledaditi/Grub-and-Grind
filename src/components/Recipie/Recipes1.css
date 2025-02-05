@@ -13,9 +13,13 @@
     padding: 0 2rem;
   }
   
-  .recipes-header {
-    margin-bottom: 1rem;
-    position: relative;
+  .recipes-header h2 {
+    font-size: 1.4rem;
+    color: #333;
+  }
+  
+  .recipe1-header h2 {
+    margin-top: 4rem;  /* Add space above Budget Meals in Recipe 1 only */
   }
   
   .recipes-header h2 {
