@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"; // Import useEffect here
+import React, { useState, useEffect } from "react";
 import "./WomensCoursePage.css";
 import Chloe from "../../assets/chloe.jpg";
 import Cassie from "../../assets/cassieho.jpg";
@@ -12,42 +12,53 @@ import X from "../../assets/x.jpg";
 import Jared from "../../assets/jared.png";
 
 const WomensCoursePage = () => {
-  // ✅ Ensure page opens at the top
-    useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [selectedCategory, setSelectedCategory] = useState("ALL");
+  const [selectedCategory, setSelectedCategory] = useState("WARM UP");
 
-  const categories = ["ALL", "MEN", "WOMEN"];
+  const categories = ["WARM UP", "CORE", "LEGS", "CARDIO", "WEIGHT LOSS", "ARMS", "HIPS", "FULL BODY"];
 
-  const menCards = [
-    { id: 5, title: "Noel Deyzel", image: Noel, link: "https://noeldeyzel.com/" },
-    { id: 6, title: "Jeff Nippard", image: Jeff, link: "https://jeffnippard.com/pages/about" },
-    { id: 7, title: "Dr. Mike Israetel", image: Dr, link: "https://rpstrength.com/pages/team/michael-israetel?srsltid=AfmBOoovMJnZzCNvzgNT04DbNel12mSjnkL3dxwqsoFZo0BrFm1Xy56T" },
-    { id: 8, title: "Athlean-X", image: X, link: "https://athleanx.com/the-coach" },
-    { id: 10, title: "Jared Beckstrand", image: Jared, link: "https://jaredbeckstrand.com/" }
-  ];
-
-  const womenCards = [
+  const warmUpCards = [
     { id: 1, title: "Chloe Ting", image: Chloe, link: "https://legacy-site.chloeting.com/about/" },
     { id: 2, title: "Cassie Ho", image: Cassie, link: "https://www.blogilates.com/about-me/" },
-    { id: 3, title: "Emi Wong", image: Emi, link: "https://www.emiwong.life/about-me" },
-    { id: 4, title: "Maddie Lymburner", image: Maddie, link: "https://maddielymburner.co/" },
-    { id: 9, title: "Sydney Cummings", image: Sydney, link: "https://royalchange.fit/" }
   ];
 
-  // Sort alphabetically when ALL is selected
-  const displayRecipes =
-    selectedCategory === "ALL"
-      ? [...menCards, ...womenCards].sort((a, b) => a.title.localeCompare(b.title))
-      : selectedCategory === "MEN"
-      ? menCards
-      : womenCards;
+  const coreCards = [
+    { id: 3, title: "Emi Wong", image: Emi, link: "https://www.emiwong.life/about-me" },
+    { id: 4, title: "Maddie Lymburner", image: Maddie, link: "https://maddielymburner.co/" },
+  ];
+
+  const legsCards = [
+    { id: 5, title: "Noel Deyzel", image: Noel, link: "https://noeldeyzel.com/" },
+    { id: 6, title: "Jeff Nippard", image: Jeff, link: "https://jeffnippard.com/pages/about" },
+  ];
+
+  const cardioCards = [
+    { id: 7, title: "Dr. Mike Israetel", image: Dr, link: "https://rpstrength.com/pages/team/michael-israetel" },
+    { id: 8, title: "Athlean-X", image: X, link: "https://athleanx.com/the-coach" },
+  ];
+
+  const weightLossCards = [
+    { id: 9, title: "Sydney Cummings", image: Sydney, link: "https://royalchange.fit/" },
+    { id: 10, title: "Jared Beckstrand", image: Jared, link: "https://jaredbeckstrand.com/" },
+  ];
+
+  const categoryCards = {
+    "WARM UP": warmUpCards,
+    "CORE": coreCards,
+    "LEGS": legsCards,
+    "CARDIO": cardioCards,
+    "WEIGHT LOSS": weightLossCards,
+    "ARMS": [...warmUpCards, ...coreCards],
+    "HIPS": [...legsCards, ...cardioCards],
+    "FULL BODY": [...warmUpCards, ...coreCards, ...legsCards, ...cardioCards, ...weightLossCards],
+  };
 
   return (
     <div className="page-container">
-      <h1 className="page-title">Instructors</h1>
+      <h1 className="page-title">Women's Workout</h1>
       <div className="content-wrapper">
         <div className="sidebar">
           <div className="category-list">
@@ -66,10 +77,9 @@ const WomensCoursePage = () => {
           </div>
         </div>
 
-        {/* Main Content */}
         <div className="main-content">
           <div className="recipe-grid">
-            {displayRecipes.map((recipe) => (
+            {categoryCards[selectedCategory].map((recipe) => (
               <div
                 key={recipe.id}
                 className="recipe-card clickable"

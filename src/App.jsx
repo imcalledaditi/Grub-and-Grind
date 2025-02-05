@@ -16,6 +16,7 @@ import Recipes4 from './components/Recipie/Recipes4.jsx';
 import Teacher from './components/Teacher/Teacher.jsx';
 import WomensCoursePage from './components/WomensCoursePage/WomensCoursePage.jsx';
 import MensCoursePage from './components/MensCoursePage/MensCoursePage.jsx';
+import BasicCoursePage from './components/BasicCoursePage/BasicCoursePage.jsx';
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
             {/* Women's Course Route */}
             <Route path="/womens-course" element={<WomensCoursePage />} />
             <Route path="/mens-course" element={<MensCoursePage />} />
+            <Route path="/basic-course" element={<BasicCoursePage />} />
           </Routes>
         </main>
       </div>
