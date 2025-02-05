@@ -14,7 +14,8 @@ import Recipes2 from './components/Recipie/Recipes2.jsx';
 import Recipes3 from './components/Recipie/Recipes3.jsx';
 import Recipes4 from './components/Recipie/Recipes4.jsx';
 import Teacher from './components/Teacher/Teacher.jsx';
-
+import WomensCoursePage from './components/WomensCoursePage/WomensCoursePage.jsx';
+import MensCoursePage from './components/MensCoursePage/MensCoursePage.jsx';
 
 function App() {
   return (
@@ -23,29 +24,38 @@ function App() {
         <Navbar />
         <main>
           <Routes>
-            <Route path="/" element={
-              <>
-                <Home />
-                <CourseSection />
-                <AboutUs_temp />
-                <LifestylePillars />
-                <Blogs />
-                <Download />
-                <ContactUs />
-              </>
-            } />
+            {/* Home Route */}
+            <Route
+              path="/"
+              element={
+                <>
+                  <Home />
+                  <CourseSection />
+                  <AboutUs_temp />
+                  <LifestylePillars />
+                  <Blogs />
+                  <Download />
+                  <ContactUs />
+                </>
+              }
+            />
+
+            {/* Recipes Route */}
             <Route path="/recipes" element={
               <>
                 <Recipes1 />
                 <Recipes2 />
                 <Recipes3 />
                 <Recipes4 />
-                
-          
-          
               </>
             } />
-            <Route path="/instructors" element={<Teacher/>} /> 
+
+            {/* Instructors Route */}
+            <Route path="/instructors" element={<Teacher />} />
+
+            {/* Women's Course Route */}
+            <Route path="/womens-course" element={<WomensCoursePage />} />
+            <Route path="/mens-course" element={<MensCoursePage />} />
           </Routes>
         </main>
       </div>
