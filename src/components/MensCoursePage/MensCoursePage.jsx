@@ -19,7 +19,7 @@ const MensCoursePage = () => {
 
   const [selectedCategory, setSelectedCategory] = useState("ALL");
 
-  const categories = ["ALL", "MEN", "WOMEN"];
+  const categories = ["WARM UP","CHEST","BACK","TRICEPS","BICEPS","SHOULDERS","CORE","LEGS","CARDIO","STRENGTH","FULL BODY"];
 
   const menCards = [
     { id: 5, title: "Noel Deyzel", image: Noel, link: "https://noeldeyzel.com/" },
