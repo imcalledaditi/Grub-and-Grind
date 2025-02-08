@@ -21,7 +21,7 @@ const BasicCoursePage = () => {
   const categories = ["WARM UP", "CORE", "LEGS","CARDIO", "WEIGHT LOSS", "ARMS", "HIPS", "FULL BODY"];
 
   const warmUpCards = [
-    { id: 1, title: "Chloe Ting", image: Chloe, link: "https://legacy-site.chloeting.com/about/" },
+    { id: 1, title: "", image: Chloe, link: "https://legacy-site.chloeting.com/about/" },
     { id: 2, title: "Cassie Ho", image: Cassie, link: "https://www.blogilates.com/about-me/" },
   ];
 
