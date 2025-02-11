@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./WomensCoursePage.css";
-import Chloe from "../../assets/chloe.jpg";
 import Maddie from "../../assets/maddie.jpg";
 import Noel from "../../assets/noel.jpg";
 import Jeff from "../../assets/jeff.jpg";
@@ -9,6 +8,7 @@ import X from "../../assets/x.jpg";
 import Jared from "../../assets/jared.png";
 import Syd from "../../assets/images/sydwarm.jpg"
 import Emi from "../../assets/images/emiwarm.jpg"
+import Chloe from "../../assets/images/cholewarm1.jpg"
 
 const WomensCoursePage = () => {
   useEffect(() => {
@@ -22,7 +22,7 @@ const WomensCoursePage = () => {
   const warmUpCards = [
     { id: 1, title: "10 Minute Full Body Stretch ~ Sydney Cummings", image: Syd, duration: "12m", link: "https://www.youtube.com/watch?v=G1DM86lyNUc"},
     { id: 2, title: "10 Minute Warm Up Routine Before Any Workut ~ Emi", image: Emi, duration: "11m", link: "https://www.youtube.com/watch?v=p7EU5yGAcJ4" },
-    { id: 3, title: "warm up something", image: Chloe, duration: "15m", link: "https://legacy-site.chloeting.com/about/"},
+    { id: 3, title: "Quick Warm Up Routine ~ Chloe Ting", image: Chloe, duration: "15m", link: "https://legacy-site.chloeting.com/about/"},
     { id: 4, title: "warm up something", image: Chloe, duration: "12m", link: "https://legacy-site.chloeting.com/about/"},
     { id: 5, title: "warm up something", image: Chloe, duration: "8m", link: "https://legacy-site.chloeting.com/about/"},
     { id: 6, title: "warm up something", image: Chloe, duration: "14m", link: "https://legacy-site.chloeting.com/about/"},
