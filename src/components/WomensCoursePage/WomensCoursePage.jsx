@@ -25,9 +25,9 @@ const WomensCoursePage = () => {
     { id: 1, title: "10 Minute Full Body Stretch ~ Sydney Cummings", image: Syd, duration: "10m", link: "https://www.youtube.com/watch?v=G1DM86lyNUc"},
     { id: 2, title: "10 Minute Warm Up Routine Before Any Workut ~ Emi", image: Emi, duration: "10m", link: "https://www.youtube.com/watch?v=p7EU5yGAcJ4" },
     { id: 3, title: "Quick Warm Up Routine ~ Chloe Ting", image: Chloe, duration: "6m", link: "https://www.youtube.com/watch?v=-p0PA9Zt8zk"},
-    { id: 4, title: "5 M Minute Up For At Home Workouts", image: Maddie, duration: "5m", link: "https://www.youtube.com/watch?v=f3zOrYCwquE"},
-    { id: 5, title: "10 Minute Full Body Warm Up", image: Blog, duration: "10m", link: "https://www.youtube.com/watch?v=T7Mk9KBuhAU"},
-    { id: 6, title: "5 Min Warm Up Before A Workout", image: Chloe1, duration: "5m", link: "https://www.youtube.com/watch?v=-HEHDNr8FN8"},
+    { id: 4, title: "5 M Minute Up For At Home Workouts ~ MadFit", image: Maddie, duration: "5m", link: "https://www.youtube.com/watch?v=f3zOrYCwquE"},
+    { id: 5, title: "10 Minute Full Body Warm Up ~ Cassey Ho", image: Blog, duration: "10m", link: "https://www.youtube.com/watch?v=T7Mk9KBuhAU"},
+    { id: 6, title: "5 Min Warm Up Before A Workout ~ Chloe Ting", image: Chloe1, duration: "5m", link: "https://www.youtube.com/watch?v=-HEHDNr8FN8"},
   ];
 
   const coreCards = [
