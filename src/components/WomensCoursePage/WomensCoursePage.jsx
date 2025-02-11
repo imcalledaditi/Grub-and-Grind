@@ -9,6 +9,8 @@ import Syd from "../../assets/images/sydwarm.jpg"
 import Emi from "../../assets/images/emiwarm.jpg"
 import Chloe from "../../assets/images/cholewarm1.jpg"
 import Maddie from "../../assets/images/madwarm.jpg"
+import Blog from "../../assets/images/blogwarm.jpg"
+import Chloe1 from "../../assets/images/cholewarm2.jpg"
 
 const WomensCoursePage = () => {
   useEffect(() => {
@@ -24,8 +26,8 @@ const WomensCoursePage = () => {
     { id: 2, title: "10 Minute Warm Up Routine Before Any Workut ~ Emi", image: Emi, duration: "10m", link: "https://www.youtube.com/watch?v=p7EU5yGAcJ4" },
     { id: 3, title: "Quick Warm Up Routine ~ Chloe Ting", image: Chloe, duration: "6m", link: "https://www.youtube.com/watch?v=-p0PA9Zt8zk"},
     { id: 4, title: "5 M Minute Up For At Home Workouts", image: Maddie, duration: "5m", link: "https://www.youtube.com/watch?v=f3zOrYCwquE"},
-    { id: 5, title: "10 Minute Full Body Warm Up", image: Chloe, duration: "10m", link: "https://legacy-site.chloeting.com/about/"},
-    { id: 6, title: "5 Min Warm Up Before A Workout", image: Chloe, duration: "5m", link: "https://legacy-site.chloeting.com/about/"},
+    { id: 5, title: "10 Minute Full Body Warm Up", image: Blog, duration: "10m", link: "https://www.youtube.com/watch?v=T7Mk9KBuhAU"},
+    { id: 6, title: "5 Min Warm Up Before A Workout", image: Chloe1, duration: "5m", link: "https://www.youtube.com/watch?v=-HEHDNr8FN8"},
   ];
 
   const coreCards = [
