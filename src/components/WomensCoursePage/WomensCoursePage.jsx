@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./WomensCoursePage.css";
 import Chloe from "../../assets/chloe.jpg";
-import Cassie from "../../assets/cassieho.jpg";
-import Emi from "../../assets/emi.jpeg";
 import Maddie from "../../assets/maddie.jpg";
-import Sydney from "../../assets/syd.jpg";
 import Noel from "../../assets/noel.jpg";
 import Jeff from "../../assets/jeff.jpg";
 import Dr from "../../assets/dr.jpg";
 import X from "../../assets/x.jpg";
 import Jared from "../../assets/jared.png";
+import Syd from "../../assets/images/sydwarm.jpg"
+import Emi from "../../assets/images/emiwarm.jpg"
 
 const WomensCoursePage = () => {
   useEffect(() => {
@@ -21,28 +20,32 @@ const WomensCoursePage = () => {
   const categories = ["WARM UP", "CORE", "LEGS", "CARDIO", "WEIGHT LOSS", "ARMS", "HIPS", "FULL BODY"];
 
   const warmUpCards = [
-    { id: 1, title: "Chloe Ting", image: Chloe, link: "https://legacy-site.chloeting.com/about/" },
-    { id: 2, title: "Cassie Ho", image: Cassie, link: "https://www.blogilates.com/about-me/" },
+    { id: 1, title: "10 Minute Full Body Stretch ~ Sydney Cummings", image: Syd, duration: "12m", link: "https://www.youtube.com/watch?v=G1DM86lyNUc"},
+    { id: 2, title: "10 Minute Warm Up Routine Before Any Workut ~ Emi", image: Emi, duration: "11m", link: "https://www.youtube.com/watch?v=p7EU5yGAcJ4" },
+    { id: 3, title: "warm up something", image: Chloe, duration: "15m", link: "https://legacy-site.chloeting.com/about/"},
+    { id: 4, title: "warm up something", image: Chloe, duration: "12m", link: "https://legacy-site.chloeting.com/about/"},
+    { id: 5, title: "warm up something", image: Chloe, duration: "8m", link: "https://legacy-site.chloeting.com/about/"},
+    { id: 6, title: "warm up something", image: Chloe, duration: "14m", link: "https://legacy-site.chloeting.com/about/"},
   ];
 
   const coreCards = [
-    { id: 3, title: "Emi Wong", image: Emi, link: "https://www.emiwong.life/about-me" },
-    { id: 4, title: "Maddie Lymburner", image: Maddie, link: "https://maddielymburner.co/" },
+    { id: 7, title: "Emi Wong", image: Emi, duration: "20m", link: "https://www.emiwong.life/about-me" },
+    { id: 8, title: "Maddie Lymburner", image: Maddie, duration: "15m", link: "https://maddielymburner.co/" },
   ];
 
   const legsCards = [
-    { id: 5, title: "Noel Deyzel", image: Noel, link: "https://noeldeyzel.com/" },
-    { id: 6, title: "Jeff Nippard", image: Jeff, link: "https://jeffnippard.com/pages/about" },
+    { id: 5, title: "Noel Deyzel", image: Noel, duration: "25m", link: "https://noeldeyzel.com/" },
+    { id: 6, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
   ];
 
   const cardioCards = [
-    { id: 7, title: "Dr. Mike Israetel", image: Dr, link: "https://rpstrength.com/pages/team/michael-israetel" },
-    { id: 8, title: "Athlean-X", image: X, link: "https://athleanx.com/the-coach" },
+    { id: 7, title: "Dr. Mike Israetel", image: Dr, duration: "45m", link: "https://rpstrength.com/pages/team/michael-israetel" },
+    { id: 8, title: "Athlean-X", image: X, duration: "35m", link: "https://athleanx.com/the-coach" },
   ];
 
   const weightLossCards = [
-    { id: 9, title: "Sydney Cummings", image: Sydney, link: "https://royalchange.fit/" },
-    { id: 10, title: "Jared Beckstrand", image: Jared, link: "https://jaredbeckstrand.com/" },
+    
+    { id: 10, title: "Jared Beckstrand", image: Jared, duration: "28m", link: "https://jaredbeckstrand.com/" },
   ];
 
   const categoryCards = {
@@ -82,11 +85,13 @@ const WomensCoursePage = () => {
             {categoryCards[selectedCategory].map((recipe) => (
               <div
                 key={recipe.id}
-                className="recipe-card clickable"
+                className="recipe-card"
                 onClick={() => window.open(recipe.link, "_blank", "noopener noreferrer")}
-                style={{ cursor: "pointer" }}
               >
-                <div className="recipe-image-container">
+                <div 
+                  className="recipe-image-container"
+                  data-duration={recipe.duration || "14m"}
+                >
                   <img src={recipe.image} alt={recipe.title} />
                 </div>
                 <div className="recipe-content">

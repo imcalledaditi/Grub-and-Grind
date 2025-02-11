@@ -21,28 +21,32 @@ const BasicCoursePage = () => {
   const categories = ["WARM UP", "CORE", "LEGS","CARDIO", "WEIGHT LOSS", "ARMS", "HIPS", "FULL BODY"];
 
   const warmUpCards = [
-    { id: 1, title: "", image: Chloe, link: "https://legacy-site.chloeting.com/about/" },
+    { id: 1, title: "10 Minute Full Body Stretch", image: Chloe, link: "https://legacy-site.chloeting.com/about/"},
     { id: 2, title: "Cassie Ho", image: Cassie, link: "https://www.blogilates.com/about-me/" },
+    { id: 3, title: "warm up something", image: Chloe, link: "https://legacy-site.chloeting.com/about/"},
+    { id: 4, title: "warm up something", image: Chloe, link: "https://legacy-site.chloeting.com/about/"},
+    { id: 5, title: "warm up something", image: Chloe, link: "https://legacy-site.chloeting.com/about/"},
+    { id: 6, title: "warm up something", image: Chloe, link: "https://legacy-site.chloeting.com/about/"},
   ];
 
   const coreCards = [
-    { id: 3, title: "Emi Wong", image: Emi, link: "https://www.emiwong.life/about-me" },
-    { id: 4, title: "Maddie Lymburner", image: Maddie, link: "https://maddielymburner.co/" },
+    { id: 7, title: "Emi Wong", image: Emi, link: "https://www.emiwong.life/about-me" },
+    { id: 8, title: "Maddie Lymburner", image: Maddie, link: "https://maddielymburner.co/" },
   ];
 
   const legsCards = [
-    { id: 5, title: "Noel Deyzel", image: Noel, link: "https://noeldeyzel.com/" },
-    { id: 6, title: "Jeff Nippard", image: Jeff, link: "https://jeffnippard.com/pages/about" },
+    { id: 9, title: "Noel Deyzel", image: Noel, link: "https://noeldeyzel.com/" },
+    { id: 10, title: "Jeff Nippard", image: Jeff, link: "https://jeffnippard.com/pages/about" },
   ];
 
   const cardioCards = [
-    { id: 7, title: "Dr. Mike Israetel", image: Dr, link: "https://rpstrength.com/pages/team/michael-israetel" },
-    { id: 8, title: "Athlean-X", image: X, link: "https://athleanx.com/the-coach" },
+    { id: 11, title: "Dr. Mike Israetel", image: Dr, link: "https://rpstrength.com/pages/team/michael-israetel" },
+    { id: 12, title: "Athlean-X", image: X, link: "https://athleanx.com/the-coach" },
   ];
 
   const weightLossCards = [
-    { id: 9, title: "Sydney Cummings", image: Sydney, link: "https://royalchange.fit/" },
-    { id: 10, title: "Jared Beckstrand", image: Jared, link: "https://jaredbeckstrand.com/" },
+    { id: 13, title: "Sydney Cummings", image: Sydney, link: "https://royalchange.fit/" },
+    { id: 14, title: "Jared Beckstrand", image: Jared, link: "https://jaredbeckstrand.com/" },
   ];
 
   const categoryCards = {
