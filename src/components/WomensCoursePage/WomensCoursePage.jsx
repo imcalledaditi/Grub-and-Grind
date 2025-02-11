@@ -11,6 +11,9 @@ import Chloe from "../../assets/images/cholewarm1.jpg"
 import Maddie from "../../assets/images/madwarm.jpg"
 import Blog from "../../assets/images/blogwarm.jpg"
 import Chloe1 from "../../assets/images/cholewarm2.jpg"
+import Blogcore from "../../assets/images/blogabs.jpg"
+import Maddiecore from "../../assets/images/madabs.jpg"
+import Chloecore from "../../assets/images/choleabs.jpg"
 
 const WomensCoursePage = () => {
   useEffect(() => {
@@ -31,23 +34,29 @@ const WomensCoursePage = () => {
   ];
 
   const coreCards = [
-    { id: 7, title: "Emi Wong", image: Emi, duration: "20m", link: "https://www.emiwong.life/about-me" },
-    { id: 8, title: "Maddie Lymburner", image: Maddie, duration: "15m", link: "https://maddielymburner.co/" },
+    { id: 7, title: "10 Min Pilates Ab Workout ~ Cassey Ho", image: Blogcore, duration: "10m", link: "https://www.youtube.com/watch?v=0K7NNWMhO1Q&list=PLSCcAGyv98icX4pV3k5uIYtzjaVw12myt&index=2" },
+    { id: 8, title: "10 Min Daily Ab Workout ~ MadFit", image: Maddiecore, duration: "10m", link: "https://www.youtube.com/watch?v=Dl8N_8UtWUU"},
+    { id: 9, title: "10 Min Standing Abs Workout to get Ripped ABS ~ Chloe Ting", image: Chloecore, duration: "10m", link: "https://www.youtube.com/watch?v=V4sWpLJcQoU"},
   ];
 
   const legsCards = [
-    { id: 5, title: "Noel Deyzel", image: Noel, duration: "25m", link: "https://noeldeyzel.com/" },
-    { id: 6, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
+    { id: 10, title: "Noel Deyzel", image: Noel, duration: "25m", link: "https://noeldeyzel.com/" },
+    { id: 11, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
+    { id: 12, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
+    { id: 13, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
   ];
 
   const cardioCards = [
-    { id: 7, title: "Dr. Mike Israetel", image: Dr, duration: "45m", link: "https://rpstrength.com/pages/team/michael-israetel" },
-    { id: 8, title: "Athlean-X", image: X, duration: "35m", link: "https://athleanx.com/the-coach" },
+    { id: 14, title: "Dr. Mike Israetel", image: Dr, duration: "45m", link: "https://rpstrength.com/pages/team/michael-israetel" },
+    { id: 15, title: "Athlean-X", image: X, duration: "35m", link: "https://athleanx.com/the-coach" },
+    {id: 16, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
+    {id: 17, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
+    {id: 19, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
   ];
 
   const weightLossCards = [
     
-    { id: 10, title: "Jared Beckstrand", image: Jared, duration: "28m", link: "https://jaredbeckstrand.com/" },
+    { id: 20, title: "Jared Beckstrand", image: Jared, duration: "28m", link: "https://jaredbeckstrand.com/" },
   ];
 
   const categoryCards = {
@@ -56,9 +65,9 @@ const WomensCoursePage = () => {
     "LEGS": legsCards,
     "CARDIO": cardioCards,
     "WEIGHT LOSS": weightLossCards,
-    "ARMS": [...warmUpCards, ...coreCards],
-    "HIPS": [...legsCards, ...cardioCards],
-    "FULL BODY": [...warmUpCards, ...coreCards, ...legsCards, ...cardioCards, ...weightLossCards],
+    "ARMS": coreCards, // Only core cards here, no need to include warmUpCards
+    "HIPS": [...legsCards, ...cardioCards], // Legs and cardio for hips
+    "FULL BODY": [...warmUpCards, ...coreCards, ...legsCards, ...cardioCards, ...weightLossCards], // Full body includes everything
   };
 
   return (
