@@ -14,6 +14,10 @@ import Chloe1 from "../../assets/images/cholewarm2.jpg"
 import Blogcore from "../../assets/images/blogabs.jpg"
 import Maddiecore from "../../assets/images/madabs.jpg"
 import Chloecore from "../../assets/images/choleabs.jpg"
+import Chloethai from "../../assets/images/chloethai.jpg"
+import Blogthai from "../../assets/images/blogthai.jpg"
+import Maddithai from "../../assets/images/madthai.jpg"
+import Emithai from "../../assets/images/emithai.jpg"
 
 const WomensCoursePage = () => {
   useEffect(() => {
@@ -40,10 +44,10 @@ const WomensCoursePage = () => {
   ];
 
   const legsCards = [
-    { id: 10, title: "Slim Thighs & Legs Workout ~ Chloe Ting", image: Noel, duration: "15m", link: "https://www.youtube.com/watch?v=EUruBzhv7Kk  " },
-    { id: 11, title: "Plie Squat Challenge! ~ Cassey Ho", image: Jeff, duration: "8m", link: "https://www.youtube.com/watch?v=SNGsOVKwpCA" },
-    { id: 12, title: "10 MIN LEG/BOOTY/THIGH WORKOUT ~ MadFit", image: Jeff, duration: "10m", link: "https://www.youtube.com/watch?v=FJA3R7n_594" },
-    { id: 13, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
+    { id: 10, title: "Slim Thighs & Legs Workout ~ Chloe Ting", image: Chloethai, duration: "15m", link: "https://www.youtube.com/watch?v=EUruBzhv7Kk  " },
+    { id: 11, title: "Plie Squat Challenge! ~ Cassey Ho", image: Blogthai, duration: "8m", link: "https://www.youtube.com/watch?v=SNGsOVKwpCA" },
+    { id: 12, title: "10 MIN LEG/BOOTY/THIGH WORKOUT ~ MadFit", image: Maddithai, duration: "10m", link: "https://www.youtube.com/watch?v=FJA3R7n_594" },
+    { id: 13, title: "SLIM LEGS IN 20 DAYS! ~ Emi", image: Emithai, duration: "10m", link: "https://www.youtube.com/watch?v=Jg61m0DwURs" },
   ];
 
   const cardioCards = [
