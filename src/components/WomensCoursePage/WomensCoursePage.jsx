@@ -18,6 +18,11 @@ import Chloethai from "../../assets/images/chloethai.jpg"
 import Blogthai from "../../assets/images/blogthai.jpg"
 import Maddithai from "../../assets/images/madthai.jpg"
 import Emithai from "../../assets/images/emithai.jpg"
+import Blogcardio from "../../assets/images/cardioblog.jpg"
+import Emicardio from "../../assets/images/cardioemi.jpg"
+import Chloeweight from "../../assets/images/chloeweight.jpg"
+import Hailarm from "../../assets/images/armhail.jpg"
+
 
 const WomensCoursePage = () => {
   useEffect(() => {
@@ -51,14 +56,29 @@ const WomensCoursePage = () => {
   ];
 
   const cardioCards = [
-    { id: 14, title: "Dr. Mike Israetel", image: Dr, duration: "45m", link: "https://rpstrength.com/pages/team/michael-israetel" },
-    { id: 15, title: "Athlean-X", image: X, duration: "35m", link: "https://athleanx.com/the-coach" },
+    { id: 14, title: "10 Minute Fat Burning Cardio Workout ~ Cassey Ho", image: Blogcardio, duration: "10m", link: "https://www.youtube.com/watch?v=Wg6-xYyB0cg" },
+    { id: 15, title: "30 MIN WALKING CARDIO WORKOUT ~ Emi", image: Emicardio, duration: "30m", link: "https://www.youtube.com/watch?v=ow3hpYJqYEI" },
   
   ];
 
   const weightLossCards = [
     
-    { id: 16, title: "Do This Everyday To Lose Weight ~ Chloe Ting", image: Jared, duration: "28m", link: "https://www.youtube.com/watch?v=2MoGxae-zyo" },
+    { id: 16, title: "Do This Everyday To Lose Weight ~ Chloe Ting", image: Chloeweight, duration: "28m", link: "https://www.youtube.com/watch?v=2MoGxae-zyo" },
+  ];
+
+  const armsCards = [
+    
+    { id: 17, title: "10min Slim Arm Workout ~ Hailey C.", image: Hailarm, duration: "10m", link: "https://www.youtube.com/watch?v=XYp7GQicd0c" },
+  ];
+
+  const hipsCards = [
+    
+    { id: 17, title: "10min Slim Arm Workout ~ Hailey C.", image: Hailarm, duration: "10m", link: "https://www.youtube.com/watch?v=XYp7GQicd0c" },
+  ];
+
+  const fullbodyCards = [
+    
+    { id: 17, title: "10min Slim Arm Workout ~ Hailey C.", image: Hailarm, duration: "10m", link: "https://www.youtube.com/watch?v=XYp7GQicd0c" },
   ];
 
   const categoryCards = {
@@ -67,9 +87,9 @@ const WomensCoursePage = () => {
     "LEGS": legsCards,
     "CARDIO": cardioCards,
     "WEIGHT LOSS": weightLossCards,
-    "ARMS": coreCards, // Only core cards here, no need to include warmUpCards
-    "HIPS": [...legsCards, ...cardioCards], // Legs and cardio for hips
-    "FULL BODY": [...warmUpCards, ...coreCards, ...legsCards, ...cardioCards, ...weightLossCards], // Full body includes everything
+    "ARMS": armsCards, // Only core cards here, no need to include warmUpCards
+    "HIPS": hipsCards,
+    "FULL BODY": fullbodyCards,
   };
 
   return (
