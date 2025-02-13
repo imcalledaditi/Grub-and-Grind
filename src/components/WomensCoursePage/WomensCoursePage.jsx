@@ -53,14 +53,12 @@ const WomensCoursePage = () => {
   const cardioCards = [
     { id: 14, title: "Dr. Mike Israetel", image: Dr, duration: "45m", link: "https://rpstrength.com/pages/team/michael-israetel" },
     { id: 15, title: "Athlean-X", image: X, duration: "35m", link: "https://athleanx.com/the-coach" },
-    {id: 16, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
-    {id: 17, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
-    {id: 19, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
+  
   ];
 
   const weightLossCards = [
     
-    { id: 20, title: "Jared Beckstrand", image: Jared, duration: "28m", link: "https://jaredbeckstrand.com/" },
+    { id: 16, title: "Do This Everyday To Lose Weight ~ Chloe Ting", image: Jared, duration: "28m", link: "https://www.youtube.com/watch?v=2MoGxae-zyo" },
   ];
 
   const categoryCards = {
