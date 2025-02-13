@@ -40,9 +40,9 @@ const WomensCoursePage = () => {
   ];
 
   const legsCards = [
-    { id: 10, title: "Noel Deyzel", image: Noel, duration: "25m", link: "https://noeldeyzel.com/" },
-    { id: 11, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
-    { id: 12, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
+    { id: 10, title: "Slim Thighs & Legs Workout ~ Chloe Ting", image: Noel, duration: "15m", link: "https://www.youtube.com/watch?v=EUruBzhv7Kk  " },
+    { id: 11, title: "Plie Squat Challenge! ~ Cassey Ho", image: Jeff, duration: "8m", link: "https://www.youtube.com/watch?v=SNGsOVKwpCA" },
+    { id: 12, title: "10 MIN LEG/BOOTY/THIGH WORKOUT ~ MadFit", image: Jeff, duration: "10m", link: "https://www.youtube.com/watch?v=FJA3R7n_594" },
     { id: 13, title: "Jeff Nippard", image: Jeff, duration: "30m", link: "https://jeffnippard.com/pages/about" },
   ];
 
