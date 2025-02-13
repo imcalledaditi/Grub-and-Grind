@@ -53,9 +53,9 @@ const WomensCoursePage = () => {
 
   const legsCards = [
     { id: 10, title: "Slim Thighs & Legs Workout ~ Chloe Ting", image: Chloethai, duration: "15m", link: "https://www.youtube.com/watch?v=EUruBzhv7Kk  " },
-    { id: 11, title: "Plie Squat Challenge! ~ Cassey Ho", image: Blogthai, duration: "8m", link: "https://www.youtube.com/watch?v=SNGsOVKwpCA" },
+    { id: 11, title: "Plie Squat Challenge! | Best Thigh Workout ~ Cassey Ho", image: Blogthai, duration: "8m", link: "https://www.youtube.com/watch?v=SNGsOVKwpCA" },
     { id: 12, title: "10 MIN LEG/BOOTY/THIGH WORKOUT ~ MadFit", image: Maddithai, duration: "10m", link: "https://www.youtube.com/watch?v=FJA3R7n_594" },
-    { id: 13, title: "SLIM LEGS IN 20 DAYS! ~ Emi", image: Emithai, duration: "10m", link: "https://www.youtube.com/watch?v=Jg61m0DwURs" },
+    { id: 13, title: "SLIM LEGS IN 20 DAYS!No Jumping Workout ~ Emi", image: Emithai, duration: "10m", link: "https://www.youtube.com/watch?v=Jg61m0DwURs" },
   ];
 
   const cardioCards = [
