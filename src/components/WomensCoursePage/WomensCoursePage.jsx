@@ -82,7 +82,7 @@ const WomensCoursePage = () => {
   const fullbodyCards = [
     
     { id: 19, title: "30 min Full Body Fat Burn HIIT (NO JUMPING) ~ Emi", image: Emifull, duration: "30m", link: "https://www.youtube.com/watch?v=W4eKVKwf3rQ" },
-    { id: 20, title: "Best Full Body Workout to Lose Fat 💪🏽20 mins~ Chloe Ting", image: Chloefull, duration: "20m", link: "hhttps://www.youtube.com/watch?v=CGmr02bfHUo" },
+    { id: 20, title: "Best Full Body Workout to Lose Fat 💪🏽20 mins ~ Chloe Ting", image: Chloefull, duration: "20m", link: "hhttps://www.youtube.com/watch?v=CGmr02bfHUo" },
   ];
 
   const categoryCards = {
