@@ -22,6 +22,9 @@ import Blogcardio from "../../assets/images/cardioblog.jpg"
 import Emicardio from "../../assets/images/cardioemi.jpg"
 import Chloeweight from "../../assets/images/chloeweight.jpg"
 import Hailarm from "../../assets/images/armhail.jpg"
+import Chloefull from "../../assets/images/chloefull.jpg"
+import Emifull from "../../assets/images/emifull.jpg"
+import Chloehip from "../../assets/images/chloehip.jpg"
 
 
 const WomensCoursePage = () => {
@@ -73,12 +76,13 @@ const WomensCoursePage = () => {
 
   const hipsCards = [
     
-    { id: 17, title: "10min Slim Arm Workout ~ Hailey C.", image: Hailarm, duration: "10m", link: "https://www.youtube.com/watch?v=XYp7GQicd0c" },
+    { id: 18, title: "At Home Hourglass Challenge ~ Chloe Ting", image: Chloehip, duration: "10m", link: "https://www.youtube.com/watch?v=XYp7GQicd0c" },
   ];
 
   const fullbodyCards = [
     
-    { id: 17, title: "10min Slim Arm Workout ~ Hailey C.", image: Hailarm, duration: "10m", link: "https://www.youtube.com/watch?v=XYp7GQicd0c" },
+    { id: 19, title: "30 min Full Body Fat Burn HIIT (NO JUMPING) ~ Emi", image: Emifull, duration: "30m", link: "https://www.youtube.com/watch?v=W4eKVKwf3rQ" },
+    { id: 20, title: "Best Full Body Workout to Lose Fat 💪🏽20 mins~ Chloe Ting", image: Chloefull, duration: "20m", link: "hhttps://www.youtube.com/watch?v=CGmr02bfHUo" },
   ];
 
   const categoryCards = {
