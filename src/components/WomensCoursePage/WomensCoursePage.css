@@ -122,8 +122,6 @@
     grid-template-columns: repeat(3, 1fr); /* Show 3 cards per row (increased) */
     gap: 24px;
     padding: 24px;
-    max-width: 1600px;
-    margin: 0 auto;
 }
 
 /* Recipe Card Styles */
@@ -136,7 +134,6 @@
     flex-direction: column;
     cursor: pointer;
     width: 100%;
-    max-width: 700px; /* Increased width */
     margin: 0 auto; /* Center the card */
 }
 
