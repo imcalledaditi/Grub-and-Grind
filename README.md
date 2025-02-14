@@ -33,7 +33,7 @@ Want to contribute or explore the project? Follow these steps:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd grub-grind
+   cd grub-and-grind
    ```
 3. Install dependencies:
    ```bash
@@ -41,7 +41,7 @@ Want to contribute or explore the project? Follow these steps:
    ```
 4. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## 🎯 Roadmap
