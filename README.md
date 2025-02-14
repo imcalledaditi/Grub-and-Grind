@@ -11,7 +11,7 @@ Grub & Grind is more than just a website—it's a community dedicated to health 
 We offer specialized fitness courses tailored for **women, men, and beginners**. These programs provide structured workout plans, ensuring you train effectively and safely.
 
 ### 🎓 Learn from the Best
-Get access to **top fitness influencers and YouTubers** whose video tutorials are featured in our courses. Learn from experienced professionals who will guide you through exercises, form corrections, and motivation tips.
+Get access to **top Fitness influencers** whose video tutorials are featured in our courses. Learn from experienced professionals who will guide you through exercises, form corrections, and motivation tips.
 
 ### 🍎 Healthy Recipes
 Good nutrition is just as important as exercise! Browse through a wide variety of **healthy recipes** that are easy to prepare and packed with nutrients. Whether you need pre-workout meals, post-workout snacks, or balanced diet plans, we have options for everyone! 
