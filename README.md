@@ -29,11 +29,11 @@ Want to contribute or explore the project? Follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/grub-grind.git
+   git clone https://github.com/yourusername/Grub-and-Grind.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd grub-and-grind
+   cd Grub-and-Grind
    ```
 3. Install dependencies:
    ```bash
