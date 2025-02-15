@@ -18,11 +18,11 @@ const MensCoursePage = () => {
 
   const warmUpCards = [
     { id: 1, title: "5 Min Whole Body Stretch Routine (PRE-WORKOUT STRETCH) ~ ATHLEAN-X", image: Syd, duration: "5m", link: "https://www.youtube.com/watch?v=AGj7wEn1jLo"},
-    { id: 2, title: "10 Minute Warm Up Routine Before Any Workut ~ Emi", image: Emi, duration: "10m", link: "https://www.youtube.com/watch?v=p7EU5yGAcJ4" },
-    { id: 3, title: "Quick Warm Up Routine ~ Chloe Ting", image: Chloe, duration: "6m", link: "https://www.youtube.com/watch?v=-p0PA9Zt8zk"},
-    { id: 4, title: "5 M Minute Up For At Home Workouts ~ MadFit", image: Chloe, duration: "5m", link: "https://www.youtube.com/watch?v=f3zOrYCwquE"},
-    { id: 5, title: "10 Minute Full Body Warm Up ~ Cassey Ho", image: Chloe, duration: "10m", link: "https://www.youtube.com/watch?v=T7Mk9KBuhAU"},
-    { id: 6, title: "10 Minute Full Body Warm Up ~ Cassey Ho", image: Chloe, duration: "10m", link: "https://www.youtube.com/watch?v=T7Mk9KBuhAU"},
+    { id: 2, title: "Easy Warm Up Routine, 6 minute Warm Up ~ Get Fit With Rick", image: Emi, duration: "6m", link: "https://www.youtube.com/watch?v=n4BP_B36wlI" },
+    { id: 3, title: "5 Minute Full Body Dynamic Warm-Up Stretch ~ Juice & Toya", image: Chloe, duration: "5m", link: "https://www.youtube.com/watch?v=3qyWpJ34dWw"},
+    { id: 4, title: "Do This Warm Up Before Every Workout, 10 Min Warm Up Routine ~ Oliver Sjostrom", image: Chloe, duration: "10m", link: "https://www.youtube.com/watch?v=9UYVecB2_08"},
+    { id: 5, title: "5 MIN WARM UP, FULL BODY WARMUP FOR AT HOME WORKOUTS ~ TIFFxDAN", image: Chloe, duration: "5m", link: "https://www.youtube.com/watch?v=_6-k5-w1bZw"},
+    { id: 6, title: "Do This Before Every Workout (Best Warm Up Routine) ~ NEXT Workout", image: Chloe, duration: "5m", link: "https://www.youtube.com/watch?v=ZO2ZwicxCEs"},
       ];
 
   const chestCards = [
