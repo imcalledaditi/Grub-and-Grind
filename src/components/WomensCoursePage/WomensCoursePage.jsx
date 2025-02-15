@@ -1,10 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./WomensCoursePage.css";
-import Noel from "../../assets/noel.jpg";
-import Jeff from "../../assets/jeff.jpg";
-import Dr from "../../assets/dr.jpg";
-import X from "../../assets/x.jpg";
-import Jared from "../../assets/jared.png";
 import Syd from "../../assets/images/sydwarm.jpg"
 import Emi from "../../assets/images/emiwarm.jpg"
 import Chloe from "../../assets/images/cholewarm1.jpg"

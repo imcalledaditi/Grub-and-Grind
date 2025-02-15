@@ -18,6 +18,7 @@ import WomensCoursePage from './components/WomensCoursePage/WomensCoursePage.jsx
 import MensCoursePage from './components/MensCoursePage/MensCoursePage.jsx';
 import BasicCoursePage from './components/BasicCoursePage/BasicCoursePage.jsx';
 
+
 function App() {
   return (
     <Router>
