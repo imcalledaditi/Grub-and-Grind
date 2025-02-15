@@ -12,6 +12,11 @@ import Four from "../../assets/Mimages/4.jpg"
 import Five from "../../assets/Mimages/5.jpg"
 import Six from "../../assets/Mimages/6.jpg"
 
+import Seven from "../../assets/Mimages/7.jpg"
+import Eight from "../../assets/Mimages/8.jpg"
+import Nine from "../../assets/Mimages/9.jpg"
+import Ten from "../../assets/Mimages/10.jpg"
+
 
 
 const MensCoursePage = () => {
@@ -33,10 +38,10 @@ const MensCoursePage = () => {
       ];
 
   const chestCards = [
-    { id: 7, title: "INTENSE CHEST WORKOUT AT HOME ~ TIFF x DAN", image: Chloe, duration: "12m", link: "https://www.youtube.com/watch?v=Jf5_PJCFs-g" },
-    { id: 8, title: "10 Min Daily Ab Workout ~ MadFit", image: Chloe, duration: "10m", link: "https://www.youtube.com/watch?v=qwx1VV9vV1A"},
-    { id: 9, title: "10 Min Standing Abs Workout to get Ripped ABS ~ Chloe Ting", image: Chloe, duration: "10m", link: "https://www.youtube.com/watch?v=V4sWpLJcQoU"},
-    { id: 10, title: "5 Min Warm Up Before A Workout ~ Chloe Ting", image: Chloe, duration: "5m", link: "https://www.youtube.com/watch?v=-HEHDNr8FN8"},
+    { id: 7, title: "INTENSE CHEST WORKOUT AT HOME ~ TIFF x DAN", image: Seven, duration: "12m", link: "https://www.youtube.com/watch?v=Jf5_PJCFs-g" },
+    { id: 8, title: "Most Effective CHEST Workout at HOME ~ NEXT Workout", image: Eight, duration: "10m", link: "https://www.youtube.com/watch?v=qwx1VV9vV1A"},
+    { id: 9, title: "9 Most Underrated Chest Exercises! ~ Tharun Kumar", image: Nine, duration: "10m", link: "https://www.youtube.com/watch?v=17WEFXKOljA"},
+    { id: 10, title: "Chest. Shoulder & ABS Workout ~ Jae-ho", image: Ten, duration: "20m", link: "https://www.youtube.com/watch?v=Dk21IuMwpec"},
   ];
 
   const strengthCards = [
@@ -47,10 +52,10 @@ const MensCoursePage = () => {
   ];
 
   const cardioCards = [
-    { id: 15, title: "10 Minute Fat Burning Cardio Workout ~ Cassey Ho", image: Chloe, duration: "10m", link: "https://www.youtube.com/watch?v=Wg6-xYyB0cg" },
-    { id: 16, title: "30 MIN WALKING CARDIO WORKOUT ~ Emi", image: Chloe, duration: "30m", link: "https://www.youtube.com/watch?v=ow3hpYJqYEI" },
-    { id: 17, title: "30 MIN WALKING CARDIO WORKOUT ~ Emi", image: Chloe, duration: "30m", link: "https://www.youtube.com/watch?v=ow3hpYJqYEI" },
-    { id: 18, title: "30 MIN WALKING CARDIO WORKOUT ~ Emi", image: Chloe, duration: "30m", link: "https://www.youtube.com/watch?v=ow3hpYJqYEI" },
+    { id: 15, title: "Complete 20 Min Full Body Cardio Workout ~ THENX", image: Chloe, duration: "20m", link: "https://www.youtube.com/watch?v=79cx5vmf3Qg" },
+    { id: 16, title: "Low Impact Cardio,Body Combat Walking Workout ~ Get Fit With Rick", image: Chloe, duration: "30m", link: "https://www.youtube.com/watch?v=u7c3CtrPKbc" },
+    { id: 17, title: "20 Min Fat Burning HIIT Workout ~ Oliver Sjostrom", image: Chloe, duration: "30m", link: "https://www.youtube.com/watch?v=-hSma-BRzoo" },
+    { id: 18, title: "Killer Fat-Burning Home Cardio ~ Jae-ho", image: Chloe, duration: "30m", link: "https://www.youtube.com/watch?v=ZfU8DzNxrNU" },
   ];
 
   const weightLossCards = [
