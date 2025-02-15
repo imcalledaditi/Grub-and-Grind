@@ -17,6 +17,10 @@ import Eight from "../../assets/Mimages/8.jpg"
 import Nine from "../../assets/Mimages/9.jpg"
 import Ten from "../../assets/Mimages/10.jpg"
 
+import One5 from "../../assets/Mimages/15.jpg"
+import One6 from "../../assets/Mimages/16.jpg"
+import One7 from "../../assets/Mimages/17.jpg"
+import One8 from "../../assets/Mimages/18.jpg"
 
 
 const MensCoursePage = () => {
@@ -52,10 +56,10 @@ const MensCoursePage = () => {
   ];
 
   const cardioCards = [
-    { id: 15, title: "Complete 20 Min Full Body Cardio Workout ~ THENX", image: Chloe, duration: "20m", link: "https://www.youtube.com/watch?v=79cx5vmf3Qg" },
-    { id: 16, title: "Low Impact Cardio,Body Combat Walking Workout ~ Get Fit With Rick", image: Chloe, duration: "30m", link: "https://www.youtube.com/watch?v=u7c3CtrPKbc" },
-    { id: 17, title: "20 Min Fat Burning HIIT Workout ~ Oliver Sjostrom", image: Chloe, duration: "30m", link: "https://www.youtube.com/watch?v=-hSma-BRzoo" },
-    { id: 18, title: "Killer Fat-Burning Home Cardio ~ Jae-ho", image: Chloe, duration: "30m", link: "https://www.youtube.com/watch?v=ZfU8DzNxrNU" },
+    { id: 15, title: "Complete 20 Min Full Body Cardio Workout ~ THENX", image: One5, duration: "20m", link: "https://www.youtube.com/watch?v=79cx5vmf3Qg" },
+    { id: 16, title: "Low Impact Cardio ~ Get Fit With Rick", image: One6, duration: "30m", link: "https://www.youtube.com/watch?v=u7c3CtrPKbc" },
+    { id: 17, title: "20 Min Fat Burning HIIT Workout ~ Oliver Sjostrom", image: One7, duration: "30m", link: "https://www.youtube.com/watch?v=-hSma-BRzoo" },
+    { id: 18, title: "Killer Fat-Burning Home Cardio ~ Jae-ho", image: One8, duration: "30m", link: "https://www.youtube.com/watch?v=ZfU8DzNxrNU" },
   ];
 
   const weightLossCards = [
