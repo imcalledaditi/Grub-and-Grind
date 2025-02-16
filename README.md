@@ -23,6 +23,7 @@ Stay informed with expert-backed articles on **nutrition, fitness, and overall w
 - **Frontend:** React.js ⚛️
 - **Backend:** Node.js 💻
 - **Database:** MongoDB 🍃
+- **Server:** Express.js 🕸️
 - **Deployment:** Hosted on a reliable platform 🌍
 
 ## 🚀 How to Run Locally
