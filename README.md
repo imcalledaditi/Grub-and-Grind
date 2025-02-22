@@ -21,7 +21,9 @@ Stay informed with expert-backed articles on **nutrition, fitness, and overall w
 
 ## 🛠️ Tech Stack
 - **Frontend:** React.js ⚛️
-- **Backend:** MongoDB 🍃
+- **Backend:** Node.js 💻
+- **Database:** MongoDB 🍃
+- **Server:** Express.js 🕸️
 - **Deployment:** Hosted on a reliable platform 🌍
 
 ## 🚀 How to Run Locally
