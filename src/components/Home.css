@@ -5,7 +5,7 @@
     overflow: hidden;
     padding: 2rem 5%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('C:\Users\MOHAN\Downloads\Aditi only\SRM\grub and grind\Grub-and-Grind\src\assets\idk4.jpg'); /* Update the path as needed */
+      url('src/assets/idk4.jpg'); /* Update the path as needed */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

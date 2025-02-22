@@ -77,7 +77,8 @@ section:first-of-type {
 }
 
 .login:hover {
-    background-color: rgba(0, 107, 77, 0.1);
+    background-color: rgb(0, 0, 0);
+    transform: translateY(-2px);
 }
 
 .sign-up {

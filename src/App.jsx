@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
+import Login from './components/Login/Login.jsx';
+import Signup from './components/Login/Signup.jsx';
 import Home from './components/Home';
 import CourseSection from './components/CourseSection';
 import AboutUs_temp from './components/AboutUs_temp.jsx';
@@ -26,6 +28,8 @@ function App() {
         <Navbar />
         <main>
           <Routes>
+            <Route path="/Login" element={<Login />} />
+            <Route path="/Signup" element={<Signup />} />
             {/* Home Route */}
             <Route
               path="/"
