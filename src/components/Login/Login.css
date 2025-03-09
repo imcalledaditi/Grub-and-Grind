@@ -24,18 +24,18 @@
 
 .card-content {
   display: grid;
-  min-height: 500px;
+  min-height: 400px; /* Adjust the height as needed */
 }
 
 /* Form Section */
 .form-section {
-  padding: 2rem;
+  padding: 1rem; /* Adjust the padding as needed */
 }
 
 .form-content {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem; /* Adjust the gap as needed */
   max-width: 400px;
   margin: 0 auto;
 }
@@ -46,7 +46,7 @@
 }
 
 .form-header h1 {
-  font-size: 1.875rem;
+  font-size: 1.5rem; /* Adjust the font size as needed */
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -84,7 +84,7 @@ input:focus {
 /* Buttons */
 .primary-btn {
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem; /* Adjust the padding as needed */
   background: #3b82f6;
   color: white;
   border: none;
@@ -144,6 +144,18 @@ input:focus {
   padding: 0 1rem;
 }
 
+/* Forgot Link */
+.forgot-link {
+  margin-left: 0.5rem; /* Adjust the margin as needed */
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
 /* Image Section */
 .image-section {
   display: none;
@@ -152,7 +164,7 @@ input:focus {
 
 .image-section img {
   width: 100%;
-  height: 100%;
+  height: 100px; /* Adjust the height as needed */
   object-fit: cover;
 }
 

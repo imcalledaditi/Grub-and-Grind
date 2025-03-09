@@ -11,7 +11,7 @@ export function Signup() {
               <div className="form-content">
                 <div className="form-header">
                   <h1>Create Account</h1>
-                  <p>Join Flowers&Saints community</p>
+                  <p>Join the Grub & Grind community</p>
                 </div>
 
                 <div className="input-group">
@@ -62,7 +62,7 @@ export function Signup() {
             </form>
 
             <div className="image-section">
-              <img src="/placeholder.svg" alt="Auth illustration" />
+              <img src="/src/assets/loginsignup/signup.jpg" alt="Workout illustration" />
             </div>
           </div>
         </div>

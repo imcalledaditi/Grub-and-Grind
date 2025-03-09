@@ -11,7 +11,7 @@ export function Login({ className, ...props }) {
               <div className="form-content">
                 <div className="form-header">
                   <h1>Welcome back</h1>
-                  <p>Login to your Acme Inc account</p>
+                  <p>Login to your Grub & Grind account</p>
                 </div>
                 
                 <div className="input-group">
@@ -55,13 +55,9 @@ export function Login({ className, ...props }) {
             </form>
 
             <div className="image-section">
-              <img src="/placeholder.svg" alt="Auth illustration" />
+              <img src="/src/assets/loginsignup/login.jpeg" alt="Workout illustration" />
             </div>
           </div>
-        </div>
-
-        <div className="terms">
-          By clicking continue, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
         </div>
       </div>
     </div>
