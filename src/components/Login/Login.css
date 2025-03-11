@@ -11,7 +11,6 @@
 .login-container {
   width: 100%;
   max-width: 800px;
-  height: 400px;
 }
 
 /* Card Styles */
@@ -19,13 +18,13 @@
   background: white;
   border-radius: 1rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  border: 9px solid #e2e8f0;
+  border: 1px solid #e2e8f0;
   overflow: hidden;
 }
 
 .card-content {
   display: grid;
-  min-height: 200px; /* Adjust the height as needed */
+  min-height: 400px; /* Adjust the height as needed */
 }
 
 /* Form Section */

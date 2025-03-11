@@ -1,19 +1,10 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .App {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #b21818;
+  background-color: #ffffff;
 }
 
 main {
-  flex: 1;
-  padding: 90px 0;
+  padding: 20px 0;
 }
 
 /* Reset default styles */
