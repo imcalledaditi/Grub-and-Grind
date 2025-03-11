@@ -33,20 +33,10 @@ export function Login({ className, ...props }) {
                   <span>Or continue with</span>
                 </div>
 
-                <div className="social-buttons">
-                  <button type="button" className="social-btn">
-                    {/* Apple SVG */}
-                    <span className="sr-only">Apple</span>
-                  </button>
                   <button type="button" className="social-btn">
                     {/* Google SVG */}
                     <span className="sr-only">Google</span>
                   </button>
-                  <button type="button" className="social-btn">
-                    {/* Meta SVG */}
-                    <span className="sr-only">Meta</span>
-                  </button>
-                </div>
 
                 <p className="signup-link">
                   Don't have an account? <a href="#">Sign up</a>

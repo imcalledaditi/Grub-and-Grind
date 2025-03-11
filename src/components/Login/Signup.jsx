@@ -41,16 +41,10 @@ export function Signup() {
                   <span>Or sign up with</span>
                 </div>
 
-                <div className="social-buttons">
                   <button type="button" className="social-btn">
                     {/* Google SVG */}
                     <span className="sr-only">Google</span>
                   </button>
-                  <button type="button" className="social-btn">
-                    {/* Meta SVG */}
-                    <span className="sr-only">Meta</span>
-                  </button>
-                </div>
 
                 <p className="terms">
                   Already have an account?{' '}

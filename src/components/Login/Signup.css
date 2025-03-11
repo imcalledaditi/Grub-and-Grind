@@ -1,197 +1,199 @@
 /* Base Styles */
 .signup-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 2rem;
-    background-color: #f8fafc;
-  }
-  
-  .signup-container {
-    width: 100%;
-    max-width: 800px;
-  }
-  
-  /* Card Styles */
-  .card {
-    background: white;
-    border-radius: 1rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e2e8f0;
-    overflow: hidden;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f8fafc;
+  overflow: hidden;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.card-content {
+  display: grid;
+  min-height: 500px; /* Adjust the height as needed */
+}
+
+/* Form Section */
+.form-section {
+  padding: 2rem; /* Adjust the padding as needed */
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-header h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.form-header p {
+  color: #64748b;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #334155;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: 2px solid #3b82f6;
+  border-color: transparent;
+}
+
+/* Buttons */
+.primary-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primary-btn:hover {
+  background: #2563eb;
+}
+
+/* Social Buttons */
+.social-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.social-btn {
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.social-btn:hover {
+  background: #f1f5f9;
+}
+
+/* Separator */
+.separator {
+  position: relative;
+  text-align: center;
+  margin: 1rem 0;
+  color: #64748b;
+}
+
+.separator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e2e8f0;
+  z-index: 1;
+}
+
+.separator span {
+  position: relative;
+  z-index: 2;
+  background: white;
+  padding: 0 1rem;
+}
+
+/* Image Section */
+.image-section {
+  display: none;
+  background: #f1f5f9;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Terms */
+.terms {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.terms a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
   .card-content {
-    display: grid;
-    min-height: 500px;
+    grid-template-columns: 1fr 1fr;
   }
   
-  /* Form Section */
-  .form-section {
-    padding: 2rem;
-  }
-  
-  .form-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .form-header {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .form-header h1 {
-    font-size: 1.875rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-  
-  .form-header p {
-    color: #64748b;
-  }
-  
-  /* Input Groups */
-  .input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  label {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #334155;
-  }
-  
-  input {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #cbd5e1;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  input:focus {
-    outline: 2px solid #3b82f6;
-    border-color: transparent;
-  }
-  
-  /* Buttons */
-  .primary-btn {
-    width: 100%;
-    padding: 1rem;
-    background: #3b82f6;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-  
-  .primary-btn:hover {
-    background: #2563eb;
-  }
-  
-  /* Social Buttons */
-  .social-buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  
-  .social-btn {
-    padding: 0.75rem;
-    border: 1px solid #e2e8f0;
-    border-radius: 0.5rem;
-    background: white;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-  
-  .social-btn:hover {
-    background: #f1f5f9;
-  }
-  
-  /* Separator */
-  .separator {
-    position: relative;
-    text-align: center;
-    margin: 1rem 0;
-    color: #64748b;
-  }
-  
-  .separator::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: #e2e8f0;
-    z-index: 1;
-  }
-  
-  .separator span {
-    position: relative;
-    z-index: 2;
-    background: white;
-    padding: 0 1rem;
-  }
-  
-  /* Image Section */
   .image-section {
-    display: none;
-    background: #f1f5f9;
+    display: block;
   }
-  
-  .image-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Terms */
-  .terms {
-    text-align: center;
-    margin-top: 1.5rem;
-    color: #64748b;
-    font-size: 0.875rem;
-  }
-  
-  .terms a {
-    color: #3b82f6;
-    text-decoration: none;
-  }
-  
-  .terms a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive Design */
-  @media (min-width: 768px) {
-    .card-content {
-      grid-template-columns: 1fr 1fr;
-    }
-    
-    .image-section {
-      display: block;
-    }
-  }
-  
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

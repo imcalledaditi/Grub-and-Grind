@@ -6,11 +6,13 @@
   min-height: 100vh;
   padding: 2rem;
   background-color: #f8fafc;
+  overflow: hidden;
 }
 
 .login-container {
   width: 100%;
   max-width: 800px;
+  overflow: hidden;
 }
 
 /* Card Styles */
@@ -25,6 +27,16 @@
 .card-content {
   display: grid;
   min-height: 400px; /* Adjust the height as needed */
+}
+
+/* Form Section */
+.form-section {
+  padding: 1rem; /* Adjust the padding as needed */
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Form Section */
@@ -102,7 +114,7 @@ input:focus {
 .social-buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1rem; 
 }
 
 .social-btn {
