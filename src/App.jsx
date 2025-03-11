@@ -22,6 +22,9 @@ import BasicCoursePage from './components/BasicCoursePage/BasicCoursePage.jsx';
 import Chatbot from './components/Chatbot/Chatbot.jsx'; 
 
 
+import Sidebar from "./components/Gemini/Sidebar/Sidebar.jsx";
+import Main from "./components/Gemini/Main/Main.jsx";
+
 function App() {
   return (
     <Router>
@@ -44,6 +47,8 @@ function App() {
                   <Blogs />
                   <Download />
                   <ContactUs />
+
+      
                 </>
               }
             />
@@ -65,6 +70,13 @@ function App() {
             <Route path="/womens-course" element={<WomensCoursePage />} />
             <Route path="/mens-course" element={<MensCoursePage />} />
             <Route path="/basic-course" element={<BasicCoursePage />} />
+
+            {/* Chatbot Route */}
+            <>
+            <Sidebar/>
+            <Main/>
+             </>
+
           </Routes>
         </main>
       </div>
