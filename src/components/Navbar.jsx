@@ -24,6 +24,7 @@ function Navbar() {
         <Link to="/">Home</Link>
         <a href="#" onClick={scrollToSection('.about-us')}>About Us</a>
         <a href="#" onClick={scrollToSection('.courses-container')}>All Course</a>
+        <a href="#" onClick={scrollToSection('.landing-container')}>Chatbot</a>
         <a href="#" onClick={scrollToSection('.blog-section')}>Blog</a>
         <Link to="/recipes">Recipes</Link>
         <a href="#contact" onClick={scrollToSection('#contact')}>Contact Us</a>

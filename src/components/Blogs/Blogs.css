@@ -7,17 +7,16 @@
 }
 
 .blog-section {
-    background-color: #efefef;
-    padding: 60px 20px;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  /* Rest of your CSS remains the same, just remove the global styles */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+  background-color: #efefef;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 .header {
   text-align: center;
@@ -35,7 +34,7 @@
 .title {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
-  color: #ffa500	;
+  color: #ffa500;
 }
 
 .blog-grid {
@@ -199,4 +198,14 @@
   .title {
     font-size: 28px;
   }
+}
+
+/* New styles for the header text */
+.header .title {
+  margin-bottom: 0.5rem;
+}
+
+.header .subtitle {
+  font-size: 24px; /* Decrease the font size */
+  color: rgba(0, 0, 0, 0.5); /* Adjust the color if needed */
 }

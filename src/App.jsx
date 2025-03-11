@@ -19,6 +19,7 @@ import Teacher from './components/Teacher/Teacher.jsx';
 import WomensCoursePage from './components/WomensCoursePage/WomensCoursePage.jsx';
 import MensCoursePage from './components/MensCoursePage/MensCoursePage.jsx';
 import BasicCoursePage from './components/BasicCoursePage/BasicCoursePage.jsx';
+import Chatbot from './components/Chatbot/Chatbot.jsx'; 
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
                 <>
                   <Home />
                   <CourseSection />
+                  <Chatbot />
                   <AboutUs_temp />
                   <LifestylePillars />
                   <Blogs />
