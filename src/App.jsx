@@ -19,10 +19,7 @@ import Teacher from './components/Teacher/Teacher.jsx';
 import WomensCoursePage from './components/WomensCoursePage/WomensCoursePage.jsx';
 import MensCoursePage from './components/MensCoursePage/MensCoursePage.jsx';
 import BasicCoursePage from './components/BasicCoursePage/BasicCoursePage.jsx';
-
-
-import Sidebar from "./components/Gemini/Sidebar/Sidebar.jsx";
-import Main from "./components/Gemini/Main/Main.jsx";
+import Chatbot from './components/Chatbot/Chatbot.jsx';
 
 function App() {
   return (
@@ -40,17 +37,15 @@ function App() {
                 <>
                   <Home />
                   <CourseSection />
+                  <Chatbot />
                   <AboutUs_temp />
                   <LifestylePillars />
                   <Blogs />
                   <Download />
                   <ContactUs />
-
-      
                 </>
               }
             />
-
             {/* Recipes Route */}
             <Route path="/recipes" element={
               <>
@@ -60,21 +55,12 @@ function App() {
                 <Recipes4 />
               </>
             } />
-
             {/* Instructors Route */}
             <Route path="/instructors" element={<Teacher />} />
-
             {/* Women's Course Route */}
             <Route path="/womens-course" element={<WomensCoursePage />} />
             <Route path="/mens-course" element={<MensCoursePage />} />
             <Route path="/basic-course" element={<BasicCoursePage />} />
-
-            {/* Chatbot Route */}
-            <>
-            <Sidebar/>
-            <Main/>
-             </>
-
           </Routes>
         </main>
       </div>
