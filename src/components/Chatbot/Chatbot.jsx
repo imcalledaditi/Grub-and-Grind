@@ -1,105 +1,126 @@
+"use client";
 
-import React from "react";
+import { useEffect, useRef } from "react";
 import "./Chatbot.css";
 
-const Chatbot = () => {
+export default function Chatbot() {
+  const canvasRef = useRef(null);
+
+  // Create realistic starfield effect
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+    let animationFrameId;
+
+    // Set canvas dimensions
+    const handleResize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    // Create stars
+    const stars = [];
+    const starCount = Math.floor((canvas.width * canvas.height) / 1000);
+
+    for (let i = 0; i < starCount; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 1.5,
+        opacity: Math.random(),
+        speed: 0.05 + Math.random() * 0.1,
+      });
+    }
+
+    // Animation loop
+    const animate = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw stars + twinkle effect
+      stars.forEach((star) => {
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
+        ctx.fill();
+
+        star.opacity += star.speed;
+        if (star.opacity > 1) {
+          star.opacity = 1;
+          star.speed = -star.speed;
+        } else if (star.opacity < 0.1) {
+          star.opacity = 0.1;
+          star.speed = Math.abs(star.speed);
+        }
+      });
+
+      animationFrameId = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
   return (
     <div className="landing-container">
-      <header className="header">
-        {/* Removed logo and menu button */}
-      </header>
+      {/* Starfield Canvas */}
+      <canvas ref={canvasRef} className="starfield-canvas"></canvas>
 
-      <main className="main-content">
+      <div className="content-wrapper">
         <div className="text-content">
           <h1 className="title">
-            Grub&Grind <span className="subtitle1">chatbot</span>
+            CHATBOT <span className="subtitle">technology</span>
           </h1>
           <p className="description">
-          The Grub & Grind Chatbot is your personal fitness and nutrition assistant, designed to help you achieve a healthier lifestyle with ease. Whether you're looking for meal plans, workout routines, or expert fitness tips, this chatbot provides instant, personalized recommendations.
+            Experience the next generation of AI-powered fitness assistance. 
+            Our chatbot provides personalized workout plans, real-time feedback, 
+            and motivation to help you achieve your fitness goals.
           </p>
           <button className="cta-button">Get Started</button>
         </div>
 
         <div className="illustration">
-          <ChatInterface />
-          <HexGrid />
+          <div className="phone">
+            <div className="phone-notch"></div>
+            <div className="phone-screen">
+              {/* Aura animation */}
+                <div className="phone-aura"></div>
+              { 
+                <img src="\src\assets\angrygif.gif" alt="Demo GIF" className="gif-in-phone" /> 
+              }
+            </div>
+            <div className="phone-reflections"></div>
+            <div className="phone-shadow"></div>
+          </div>
         </div>
-      </main>
-    </div>
-  );
-};
+      </div>
 
-const ChatInterface = () => {
-  return (
-    <div className="phone">
-      <div className="phone-screen">
-        <div className="chat-container">
-          <ChatBubble type="bot" />
-          <ChatBubble type="user" />
-          <ChatBubble type="bot" />
-        </div>
-        <RobotIllustration />
-      </div>
-    </div>
-  );
-};
-
-const ChatBubble = ({ type }) => {
-  return (
-    <div className={`chat-bubble ${type}`}>
-      <div className="chat-icon">
-        {type === "bot" ? (
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="bot-icon">
-            <circle cx="12" cy="12" r="10" fill="#00cc66" />
-            <circle cx="8" cy="10" r="2" fill="#111111" />
-            <circle cx="16" cy="10" r="2" fill="#111111" />
-            <path d="M8 16C8 16 10 18 12 18C14 18 16 16 16 16" stroke="#111111" strokeWidth="1.5" strokeLinecap="round" />
-          </svg>
-        ) : (
-          "👤"
-        )}
-      </div>
-      <div className="chat-text"></div>
-    </div>
-  );
-};
-
-const RobotIllustration = () => {
-  return (
-    <div className="robot">
-      <div className="robot-head">
-        <div className="robot-eyes">
-          <div className="robot-eye left"></div>
-          <div className="robot-eye right"></div>
-        </div>
-        <div className="robot-mouth"></div>
-        <div className="robot-antenna"></div>
-      </div>
-      <div className="robot-body">
-        <div className="robot-badge"></div>
-      </div>
-      <div className="robot-arms">
-        <div className="robot-arm left"></div>
-        <div className="robot-arm right"></div>
-      </div>
-      <div className="robot-legs">
-        <div className="robot-leg left"></div>
-        <div className="robot-leg right"></div>
+      {/* Floating particles */}
+      <div className="floating-particles">
+        {Array(15)
+          .fill(0)
+          .map((_, i) => (
+            <div
+              key={`particle-${i}`}
+              className="floating-particle"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 10}s`,
+                animationDuration: `${15 + Math.random() * 10}s`,
+                width: `${3 + Math.random() * 5}px`,
+                height: `${3 + Math.random() * 5}px`,
+                opacity: 0.1 + Math.random() * 0.3,
+              }}
+            />
+          ))}
       </div>
     </div>
   );
-};
-
-const HexGrid = () => {
-  return (
-    <div className="hex-grid">
-      {Array(20)
-        .fill(0)
-        .map((_, i) => (
-          <div key={i} className="hex"></div>
-        ))}
-    </div>
-  );
-};
-
-export default Chatbot;
+}
