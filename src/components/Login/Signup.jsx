@@ -1,13 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import './Signup.css';
 
 export function Signup() {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+    firstName: '',
+    lastName: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('/api/signup', formData);
+      alert(response.data.message);
+    } catch (error) {
+      alert(error.response?.data?.error || 'Error signing up');
+    }
+  };
+
   return (
     <div className="signup-wrapper">
       <div className="signup-container">
         <div className="card">
           <div className="card-content">
-            <form className="form-section">
+            <form className="form-section" onSubmit={handleSubmit}>
               <div className="form-content">
                 <div className="form-header">
                   <h1>Create Account</h1>
@@ -16,22 +38,22 @@ export function Signup() {
 
                 <div className="input-group">
                   <label htmlFor="email">Email</label>
-                  <input type="email" id="email" placeholder="Email address" required />
+                  <input type="email" id="email" placeholder="Email address" required onChange={handleChange} />
                 </div>
 
                 <div className="input-group">
                   <label htmlFor="password">Password</label>
-                  <input type="password" id="password" placeholder="Create password" required />
+                  <input type="password" id="password" placeholder="Create password" required onChange={handleChange} />
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="input-group">
-                    <label htmlFor="first-name">First Name</label>
-                    <input type="text" id="first-name" placeholder="First name" required />
+                    <label htmlFor="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="First name" required onChange={handleChange} />
                   </div>
                   <div className="input-group">
-                    <label htmlFor="last-name">Last Name</label>
-                    <input type="text" id="last-name" placeholder="Last name" required />
+                    <label htmlFor="lastName">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Last name" required onChange={handleChange} />
                   </div>
                 </div>
 
